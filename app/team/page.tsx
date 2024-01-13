@@ -1,10 +1,23 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Image from "next/image";
+import { Tab } from "@headlessui/react";
+import { classNames } from "@/components/utils/helper";
+import Link from "next/link";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import Cursor from "@/components/Cursor";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
+// import { render } from "react-dom";
+import * as Ariakit from "@ariakit/react";
+// import "./styles.css";
+import Harsh from "@/public/assets/harsh.jpg";
 
-const Team = () => {
+export default function Team() {
   const [selectedIndex, setSelectedIndex] = React.useState(1);
   const [members] = React.useState({
     Admin: [
@@ -62,7 +75,7 @@ const Team = () => {
       },
       {
         id: 0.3,
-        title: "Dr. Karthik Balasundaram",
+        title: "Dr. K. Balasundaram",
         position: "Professor Incharge",
         // image: karthik_sir,
         show: true,
@@ -353,74 +366,220 @@ const Team = () => {
       },
     ],
   });
-  return (
-    <div className="flex flex-col bg-white w-full place-content-center px-4 py-12 text-slate-900">
-      <TiltCard />
-    </div>
-  );
-};
 
-const TiltCard = () => {
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.config({ nullTargetWarn: false });
 
-  const mouseXSpring = useSpring(x);
-  const mouseYSpring = useSpring(y);
+  const [isDesktop, setIsDesktop] = useState(true);
 
-  const rotateX = useTransform(
-    mouseYSpring,
-    [-0.5, 0.5],
-    ["17.5deg", "-17.5deg"]
-  );
-  const rotateY = useTransform(
-    mouseXSpring,
-    [-0.5, 0.5],
-    ["-17.5deg", "17.5deg"]
-  );
+  useEffect(() => {
+    const { orientation, history } = window;
 
-  const handleMouseMove = (e) => {
-    const rect = e.target.getBoundingClientRect();
+    const result =
+      typeof orientation === "undefined" &&
+      navigator.userAgent.indexOf("IEMobile") === -1;
+    history.scrollRestoration = "manual";
 
-    const width = rect.width;
-    const height = rect.height;
+    setIsDesktop(result);
+  }, [isDesktop]);
 
-    const mouseX = e.clientX - rect.left;
-    const mouseY = e.clientY - rect.top;
+  const [activeTab, setActiveTab] = useState(null);
 
-    const xPct = mouseX / width - 0.5;
-    const yPct = mouseY / height - 0.5;
-
-    x.set(xPct);
-    y.set(yPct);
+  const handleClick = (tab) => {
+    setActiveTab(tab === activeTab ? null : tab);
   };
 
-  const handleMouseLeave = () => {
-    x.set(0);
-    y.set(0);
-  };
-
+  const defaultSelectedId = "default-selected-tab";
+  // render() {
   return (
-    <motion.div
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-      style={{
-        rotateY,
-        rotateX,
-        transformStyle: "preserve-3d",
-      }}
-      className="relative h-96 w-72 rounded-xl bg-gradient-to-b from-black/0 to-black/100"
-    >
-      <div
-        style={{
-          transform: "translateZ(75px)",
-          transformStyle: "preserve-3d",
-        }}
-        className=" absolute inset-4 grid place-content-center rounded-xl bg-white shadow-lg"
-      >
-        <Image src="" alt="" className="" />
+    <>
+      <Cursor isDesktop={isDesktop} />
+      <div className="bg-red-800 bg-[url('/assets/event_red2.png')] bg-blend-darken bg-cover bg-left bg-no-repeat">
+        <div className="h-full bg-gradient-to-b from-[rgba(0,0,0,0.78)] via-[rgba(0,0,0,0.72)] to-[rgb(0,0,0,1)]">
+          <div className="w-full min-h-screen flex justify-center overflow-hidden">
+            <div className="p-14 lg:p-6 mt-6">
+              <div className="md:col-span-2 lg:col-span-3 justify-center items-center flex flex-col gap-6">
+                <Tab.Group
+                  selectedIndex={selectedIndex}
+                  onChange={setSelectedIndex}
+                >
+                  <Tab.List className="grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-40 items-center justify-between max-w-xs md:max-w-5xl text-lg md:text-2xl lg:text-4xl font-semibold">
+                    {Object.keys(members).map((member) => (
+                      <Tab
+                        key={member}
+                        className={({ selected }) =>
+                          classNames(
+                            "uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#FF2D34] to-[#D5242A] outline-none",
+                            selected ? "" : "text-white"
+                          )
+                        }
+                      >
+                        {member.toUpperCase()}
+                      </Tab>
+                    ))}
+                  </Tab.List>
+                  <Tab.Panels className="mt-6">
+                    {Object.values(members).map((memberGp, idx) => (
+                      <Tab.Panel
+                        key={idx}
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20"
+                      >
+                        {memberGp.map((member, idx) => (
+                          <>
+                            {!member?.show ? (
+                              <div key={idx} />
+                            ) : (
+                              // <div
+                              //   key={idx}
+                              //   className="shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] bg-black lg:scale-90"
+                              // >
+                              //   <div className="bg-black">
+                              //     <div className="flex flex-col justify-center gap-6 h-72 overflow-clip">
+                              //       <Image
+                              //         src={member.image}
+                              //         alt={member.title}
+                              //         className="scale-[1.2] md:scale-[1.5] lg:scale-100 w-full"
+                              //       />
+                              //     </div>
+                              //     <div className="flex flex-col justify-center items-center gap-2 p-4">
+                              //       <span className="font-bold uppercase text-base md:text-lg lg:text-xl text-center text-transparent bg-clip-text bg-gradient-to-b from-[#FF2D34] to-[#D5242A]">
+                              //         {member.title}
+                              //       </span>
+                              //       <div className="w-2/3 h-[0.02rem] bg-[#ffff] my-1" />
+                              //       {member.position && (
+                              //         <span className="font-medium text-xs xl:text-base text-center text-[#949494]">
+                              //           {member.position}
+                              //         </span>
+                              //       )}
+                              //       <div className="flex justify-center gap-2">
+                              //         {member.linkedin && (
+                              //           <Link
+                              //             href={`${member.linkedin}`}
+                              //             target="_blank"
+                              //           >
+                              //             <svg
+                              //               className="h-6 w-6 lg:h-7 lg:w-7 ml-4 sm:ml-0"
+                              //               viewBox="0 0 43 43"
+                              //               fill="none"
+                              //               xmlns="http://www.w3.org/2000/svg"
+                              //             >
+                              //               <path
+                              //                 d="M21.5 0C9.62573 0 0 9.62573 0 21.5C0 33.3743 9.62573 43 21.5 43C33.3743 43 43 33.3743 43 21.5C43 9.62573 33.3743 0 21.5 0ZM16.237 30.4113H11.8832V16.4005H16.237V30.4113ZM14.0332 14.6805C12.6581 14.6805 11.769 13.7062 11.769 12.5014C11.769 11.2718 12.685 10.3267 14.0892 10.3267C15.4934 10.3267 16.3534 11.2718 16.3803 12.5014C16.3803 13.7062 15.4934 14.6805 14.0332 14.6805ZM32.138 30.4113H27.7843V22.6467C27.7843 20.8393 27.1527 19.612 25.5783 19.612C24.3756 19.612 23.6612 20.4429 23.3454 21.2424C23.229 21.5269 23.1998 21.93 23.1998 22.3309V30.4091H18.8439V20.8684C18.8439 19.1193 18.7879 17.6569 18.7296 16.3982H22.5123L22.7116 18.3444H22.799C23.3723 17.4307 24.7765 16.0824 27.1258 16.0824C29.9903 16.0824 32.138 18.0018 32.138 22.1271V30.4113Z"
+                              //                 fill="#FF2D34"
+                              //               />
+                              //             </svg>
+                              //           </Link>
+                              //         )}
+                              //         {member.mail && member.phone && (
+                              //           <div className="text-white text-[10px] lg:text-[14px] w-3/4 lg:w-full">
+                              //             <div className="grid grid-rows-2 gap-0 justify-items-start">
+                              //               <Link
+                              //                 href={`mailto:${member.mail}`}
+                              //                 target="_blank"
+                              //               >
+                              //                 {member.mail}
+                              //               </Link>
+                              //               <Link
+                              //                 href={`tel:${member.phone}`}
+                              //                 target="_blank"
+                              //               >
+                              //                 +91 {member.phone}
+                              //               </Link>
+                              //             </div>
+                              //           </div>
+                              //         )}
+                              //       </div>
+                              //     </div>
+                              //   </div>
+                              // </div>
+                              <div
+                                key={idx}
+                                className="bg-black gap-8 flex-wrap flex justify-center items-center"
+                              >
+                                <div className="w-64 h-82 p-2 bg-whilte rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl relative">
+                                  <div className="absolute bg-[#d5242a] w-full h-32  top-0 right-0"></div>
+
+                                  {/* <!-- Image --> */}
+                                  <div className="flex justify-center mt-4">
+                                    <Image
+                                      src={Harsh}
+                                      alt=""
+                                      className="h-52 w-52 rounded-full object-cover border-[#d5242a] z-10 hover:scale-105 hover:duration-150"
+                                      width="210 "
+                                    />
+                                  </div>
+
+                                  <div className="p-2 mb-3 hover:static">
+                                    {/* <!-- NAME --> */}
+                                    <div>
+                                      <h2 className="font-extrabold text-lg mb-2 z-10 ">
+                                        {member.title}
+                                      </h2>
+                                    </div>
+
+                                    {/* <!-- post --> */}
+                                    <div>
+                                      <p className="text-sm text-gray-400">
+                                        {member.position}
+                                      </p>
+                                    </div>
+
+                                    <div className="flex mt-3  gap-2 ml-2 justify-evenly	">
+                                      {/* Linkedin */}
+                                      <div>
+                                        <Link
+                                          href={`${member.linkedin}`}
+                                          target="_blank"
+                                        >
+                                          <FaLinkedin
+                                            size="1.8rem"
+                                            className="hover:scale-110 hover:duration-150"
+                                          />
+                                        </Link>
+                                      </div>
+
+                                      {/* email */}
+                                      <div>
+                                        <Link
+                                          href={`mailto:${member.mail}`}
+                                          target="_blank"
+                                        >
+                                          <MdEmail
+                                            size="1.8rem"
+                                            className="hover:scale-110 hover:duration-150 "
+                                          />
+                                        </Link>
+                                      </div>
+
+                                      {/* phone number */}
+                                      <div>
+                                        <Link
+                                          href={`tel:${member.phone}`}
+                                          target="_blank"
+                                        >
+                                          <FaPhone
+                                            size="1.8rem"
+                                            className="hover:scale-110 hover:duration-150"
+                                          />
+                                        </Link>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            )}
+                          </>
+                        ))}
+                      </Tab.Panel>
+                    ))}
+                  </Tab.Panels>
+                </Tab.Group>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </motion.div>
+    </>
   );
-};
-
-export default Team;
+  // }
+}
