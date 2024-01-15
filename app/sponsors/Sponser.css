@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+.sponsers {
+  background-image: url(../../public/assets/sponserbg.jpg);
+  font-family: "Roboto", sans-serif;
+}
+.sponsercontainer {
+  background-color: rgba(65, 53, 53, 0.308);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.2),
+    -0.1rem -0.1rem 1rem rgba(0, 0, 0, 0.2);
+}
+.sponsers h1 {
+  font-stretch: expanded;
+}
+.sponseritem:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+  .sponsercards img {
+    transform: scale(1.1);
+  }
+}
+/* @media screen and (max-width: 650px) {
+    .sponsercontainer {
+      height: 180vh;
+      padding: 5%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .row {
+      flex-direction: column;
+      height: 50%;
+      width: 100%;
+    }
+    .sponseritem {
+      height: 33%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0rem;
+    }
+    .sponseritem:hover {
+      height: 90%;
+    }
+    .sponsercards {
+      height: 40%;
+    }
+  } */

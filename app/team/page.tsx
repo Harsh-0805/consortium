@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Image from "next/image";
 import { Tab } from "@headlessui/react";
 import { classNames } from "@/components/utils/helper";
@@ -12,10 +11,10 @@ import Cursor from "@/components/Cursor";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
-// import { render } from "react-dom";
-import * as Ariakit from "@ariakit/react";
-// import "./styles.css";
+
 import Harsh from "@/public/assets/harsh.jpg";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function Team() {
   const [selectedIndex, setSelectedIndex] = React.useState(1);
@@ -385,7 +384,7 @@ export default function Team() {
 
   const [activeTab, setActiveTab] = useState(null);
 
-  const handleClick = (tab) => {
+  const handleClick = (tab: any) => {
     setActiveTab(tab === activeTab ? null : tab);
   };
 
@@ -394,6 +393,7 @@ export default function Team() {
   return (
     <>
       <Cursor isDesktop={isDesktop} />
+      <Navbar />
       <div className="bg-red-800 bg-[url('/assets/event_red2.png')] bg-blend-darken bg-cover bg-left bg-no-repeat">
         <div className="h-full bg-gradient-to-b from-[rgba(0,0,0,0.78)] via-[rgba(0,0,0,0.72)] to-[rgb(0,0,0,1)]">
           <div className="w-full min-h-screen flex justify-center overflow-hidden">
@@ -523,47 +523,48 @@ export default function Team() {
                                         {member.position}
                                       </p>
                                     </div>
+                                    {member.mail && member.phone && (
+                                      <div className="flex mt-3  gap-2 ml-2 justify-evenly	">
+                                        {/* Linkedin */}
+                                        <div>
+                                          <Link
+                                            href={`${member.linkedin}`}
+                                            target="_blank"
+                                          >
+                                            <FaLinkedin
+                                              size="1.8rem"
+                                              className="hover:scale-110 hover:duration-150"
+                                            />
+                                          </Link>
+                                        </div>
 
-                                    <div className="flex mt-3  gap-2 ml-2 justify-evenly	">
-                                      {/* Linkedin */}
-                                      <div>
-                                        <Link
-                                          href={`${member.linkedin}`}
-                                          target="_blank"
-                                        >
-                                          <FaLinkedin
-                                            size="1.8rem"
-                                            className="hover:scale-110 hover:duration-150"
-                                          />
-                                        </Link>
-                                      </div>
+                                        {/* email */}
+                                        <div>
+                                          <Link
+                                            href={`mailto:${member.mail}`}
+                                            target="_blank"
+                                          >
+                                            <MdEmail
+                                              size="1.8rem"
+                                              className="hover:scale-110 hover:duration-150 "
+                                            />
+                                          </Link>
+                                        </div>
 
-                                      {/* email */}
-                                      <div>
-                                        <Link
-                                          href={`mailto:${member.mail}`}
-                                          target="_blank"
-                                        >
-                                          <MdEmail
-                                            size="1.8rem"
-                                            className="hover:scale-110 hover:duration-150 "
-                                          />
-                                        </Link>
+                                        {/* phone number */}
+                                        <div>
+                                          <Link
+                                            href={`tel:${member.phone}`}
+                                            target="_blank"
+                                          >
+                                            <FaPhone
+                                              size="1.8rem"
+                                              className="hover:scale-110 hover:duration-150"
+                                            />
+                                          </Link>
+                                        </div>
                                       </div>
-
-                                      {/* phone number */}
-                                      <div>
-                                        <Link
-                                          href={`tel:${member.phone}`}
-                                          target="_blank"
-                                        >
-                                          <FaPhone
-                                            size="1.8rem"
-                                            className="hover:scale-110 hover:duration-150"
-                                          />
-                                        </Link>
-                                      </div>
-                                    </div>
+                                    )}
                                   </div>
                                 </div>
                               </div>
@@ -579,6 +580,7 @@ export default function Team() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
   // }
