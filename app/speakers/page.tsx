@@ -5,6 +5,9 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { FaLinkedin } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { FaPhone } from "react-icons/fa";
 
 import kiran from "../../public/assets/speakers/kiran.png";
 import satish_dua from "../../public/assets/speakers/satish_dua.png";
@@ -33,6 +36,7 @@ import simon from "../../public/assets/speakers/simon.jpg";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Contact from "@/components/Contact";
 
 const speakersData = [
   {
@@ -275,157 +279,143 @@ const Speakers = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-evenly items-center gap-10 px-2">
                   <div />
                   <div className="md:col-span-2 lg:col-span-3 justify-center items-center flex flex-col gap-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-xs md:max-w-5xl">
-                      <div className="shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] lg:scale-90">
-                        <div className="bg-black">
-                          <div className="flex flex-col justify-center gap-6 h-72 overflow-clip">
-                            <Image
-                              src={priyanshu}
-                              alt="priyanshu"
-                              className="scale-[1.4] md:scale-[1.5] lg:scale-100 w-full"
-                            />
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                      <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative bg-black lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                        <div className="flex items-center gap-4">
+                          <Image
+                            src={priyanshu}
+                            alt="tanmay"
+                            className="w-32 group-hover:w-36 group-hover:h-36 h-32 object-center object-cover rounded-full transition-all duration-500 delay-100 transform"
+                          />
+
+                          <div className="transition-all transform duration-500">
+                            <h1 className="text-white-600 dark:text-gray-200 font-bold">
+                              Tanmay Nagrale
+                            </h1>
+                            <p className="text-gray-400">
+                              Head Of Events and Planning
+                            </p>
                           </div>
                         </div>
-                        <div className="flex flex-col justify-center items-center gap-2 p-6 bg-black">
-                          <span className="font-bold uppercase text-lg lg:text-xl xl:text-[21px] text-center text-transparent bg-clip-text bg-gradient-to-b from-[#FF2D34] to-[#D5242A]">
-                            Priyanshu Singh
-                          </span>
-                          <div className="w-2/3 h-[0.02rem] bg-[#ffff] lg:my-3" />
-                          <span className="font-medium text-xs xl:text-sm text-center text-[#949494]">
-                            Head of Public Relations
-                          </span>
-                          <div className="flex justify-center gap-2">
-                            <Link
-                              href="https://www.linkedin.com/in/priyanshu-singh-480405214/"
-                              target="_blank"
-                            >
-                              <svg
-                                className="h-6 w-6 lg:h-7 lg:w-7 ml-4 sm:ml-0"
-                                viewBox="0 0 43 43"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M21.5 0C9.62573 0 0 9.62573 0 21.5C0 33.3743 9.62573 43 21.5 43C33.3743 43 43 33.3743 43 21.5C43 9.62573 33.3743 0 21.5 0ZM16.237 30.4113H11.8832V16.4005H16.237V30.4113ZM14.0332 14.6805C12.6581 14.6805 11.769 13.7062 11.769 12.5014C11.769 11.2718 12.685 10.3267 14.0892 10.3267C15.4934 10.3267 16.3534 11.2718 16.3803 12.5014C16.3803 13.7062 15.4934 14.6805 14.0332 14.6805ZM32.138 30.4113H27.7843V22.6467C27.7843 20.8393 27.1527 19.612 25.5783 19.612C24.3756 19.612 23.6612 20.4429 23.3454 21.2424C23.229 21.5269 23.1998 21.93 23.1998 22.3309V30.4091H18.8439V20.8684C18.8439 19.1193 18.7879 17.6569 18.7296 16.3982H22.5123L22.7116 18.3444H22.799C23.3723 17.4307 24.7765 16.0824 27.1258 16.0824C29.9903 16.0824 32.138 18.0018 32.138 22.1271V30.4113Z"
-                                  fill="#FF2D34"
-                                />
-                              </svg>
+                        <div className="absolute group-hover:bottom-1 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg">
+                          <div className="flex justify-evenly items-center gap-2 p-1 text-2xl text-white dark:text-gray-600">
+                            <Link href="">
+                              <FaPhone
+                                size="1.8rem"
+                                fill="black"
+                                className="hover:scale-110 hover:duration-150"
+                              />
                             </Link>
-                            <div className="text-white text-[12px] lg:text-[14px] w-3/4 lg:w-full">
-                              <div className="grid grid-rows-2 gap-1 justify-items-start">
-                                <Link
-                                  href="mailto:thisispriyanshu2001@gmail.com"
-                                  target="_blank"
-                                >
-                                  thisispriyanshu2001@gmail.com
-                                </Link>
-                                <Link href="tel:914188972" target="_blank">
-                                  +91 9920479815
-                                </Link>
-                              </div>
-                            </div>
+                            <Link href="">
+                              <MdEmail
+                                size="1.8rem"
+                                fill="black"
+                                className="hover:scale-110 hover:duration-150"
+                              />
+                            </Link>
+                            <Link href="">
+                              <FaLinkedin
+                                size="1.8rem"
+                                fill="black"
+                                className="hover:scale-110 hover:duration-150"
+                              />
+                            </Link>
                           </div>
                         </div>
                       </div>
-                      <div className="shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] lg:scale-90">
-                        <div className="bg-black">
-                          <div className="flex flex-col justify-center gap-6 h-72 overflow-clip">
-                            <Image
-                              src={mitali}
-                              alt="mitali"
-                              className="scale-[1.4] md:scale-[1.5] lg:scale-100 w-full"
-                            />
+
+                      <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative bg-black lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                        <div className="flex items-center gap-4">
+                          <Image
+                            src={mitali}
+                            alt="tanmay"
+                            className="w-32 group-hover:w-36 group-hover:h-36 h-32 object-center object-cover rounded-full transition-all duration-500 delay-100 transform"
+                          />
+
+                          <div className="transition-all transform duration-500">
+                            <h1 className="text-white-600 dark:text-gray-200 font-bold">
+                              Tanmay Nagrale
+                            </h1>
+                            <p className="text-gray-400">
+                              Head Of Events and Planning
+                            </p>
+                            <a
+                              href=""
+                              className="text-xs text-gray-500 dark:text-gray-200 group-hover:opacity-100 opacity-0 transform transition-all duration-500"
+                            ></a>
                           </div>
                         </div>
-                        <div className="flex flex-col justify-center items-center gap-2 p-6 bg-black">
-                          <span className="font-bold uppercase text-lg lg:text-xl xl:text-[21px] text-center text-transparent bg-clip-text bg-gradient-to-b from-[#FF2D34] to-[#D5242A]">
-                            Mitali Khodke
-                          </span>
-                          <div className="w-2/3 h-[0.02rem] bg-[#ffff] lg:my-3" />
-                          <span className="font-medium text-xs xl:text-sm text-center text-[#949494]">
-                            Head of Public Relations
-                          </span>
-                          <div className="flex justify-center gap-2">
-                            <Link
-                              href="https://www.linkedin.com/in/mitali-khodke-63408220b/"
-                              target="_blank"
-                            >
-                              <svg
-                                className="h-6 w-6 lg:h-7 lg:w-7 ml-4 sm:ml-0"
-                                viewBox="0 0 43 43"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M21.5 0C9.62573 0 0 9.62573 0 21.5C0 33.3743 9.62573 43 21.5 43C33.3743 43 43 33.3743 43 21.5C43 9.62573 33.3743 0 21.5 0ZM16.237 30.4113H11.8832V16.4005H16.237V30.4113ZM14.0332 14.6805C12.6581 14.6805 11.769 13.7062 11.769 12.5014C11.769 11.2718 12.685 10.3267 14.0892 10.3267C15.4934 10.3267 16.3534 11.2718 16.3803 12.5014C16.3803 13.7062 15.4934 14.6805 14.0332 14.6805ZM32.138 30.4113H27.7843V22.6467C27.7843 20.8393 27.1527 19.612 25.5783 19.612C24.3756 19.612 23.6612 20.4429 23.3454 21.2424C23.229 21.5269 23.1998 21.93 23.1998 22.3309V30.4091H18.8439V20.8684C18.8439 19.1193 18.7879 17.6569 18.7296 16.3982H22.5123L22.7116 18.3444H22.799C23.3723 17.4307 24.7765 16.0824 27.1258 16.0824C29.9903 16.0824 32.138 18.0018 32.138 22.1271V30.4113Z"
-                                  fill="#FF2D34"
-                                />
-                              </svg>
+                        <div className="absolute group-hover:bottom-1 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg">
+                          <div className="flex justify-evenly items-center gap-2 p-1 text-2xl text-white dark:text-gray-600">
+                            <Link href="">
+                              <FaPhone
+                                size="1.8rem"
+                                fill="black"
+                                className="hover:scale-110 hover:duration-150"
+                              />
                             </Link>
-                            <div className="text-white text-[12px] lg:text-[14px] w-3/4">
-                              <div className="grid grid-rows-2 gap-1 justify-items-start">
-                                <Link
-                                  href="mailto:mitalikhodke@gmail.com"
-                                  target="_blank"
-                                >
-                                  mitalikhodke@gmail.com
-                                </Link>
-                                <Link href="tel:914188972" target="_blank">
-                                  +91 9309576732
-                                </Link>
-                              </div>
-                            </div>
+                            <Link href="">
+                              <MdEmail
+                                size="1.8rem"
+                                fill="black"
+                                className="hover:scale-110 hover:duration-150"
+                              />
+                            </Link>
+                            <Link href="">
+                              <FaLinkedin
+                                size="1.8rem"
+                                fill="black"
+                                className="hover:scale-110 hover:duration-150"
+                              />
+                            </Link>
                           </div>
                         </div>
                       </div>
-                      <div className="shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] lg:scale-90">
-                        <div className="bg-black">
-                          <div className="flex flex-col justify-center gap-6 h-72 overflow-clip">
-                            <Image
-                              src={balpande}
-                              alt="balpande"
-                              className="scale-[1.4] md:scale-[1.5] lg:scale-100 w-full"
-                            />
+
+                      <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative bg-black lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                        <div className="flex items-center gap-4">
+                          <Image
+                            src={balpande}
+                            alt="tanmay"
+                            className="w-32 group-hover:w-36 group-hover:h-36 h-32 object-center object-cover rounded-full transition-all duration-500 delay-100 transform"
+                          />
+
+                          <div className="transition-all transform duration-500">
+                            <h1 className="text-white-600 dark:text-gray-200 font-bold">
+                              Tanmay Nagrale
+                            </h1>
+                            <p className="text-gray-400">
+                              Head Of Events and Planning
+                            </p>
+                            <a
+                              href=""
+                              className="text-xs text-gray-500 dark:text-gray-200 group-hover:opacity-100 opacity-0 transform transition-all duration-500"
+                            ></a>
                           </div>
                         </div>
-                        <div className="flex flex-col justify-center items-center gap-2 p-6 bg-black">
-                          <span className="font-bold uppercase text-lg lg:text-xl xl:text-[21px] text-center text-transparent bg-clip-text bg-gradient-to-b from-[#FF2D34] to-[#D5242A]">
-                            Atharva Balpande
-                          </span>
-                          <div className="w-2/3 h-[0.02rem] bg-[#ffff] lg:my-3" />
-                          <span className="font-medium text-xs xl:text-sm text-center text-[#949494]">
-                            Head of Public Relations
-                          </span>
-                          <div className="flex justify-center gap-2">
-                            <Link
-                              href="https://www.linkedin.com/in/tanishqa-mishra-406ab5209/?originalSubdomain=in"
-                              target="_blank"
-                            >
-                              <svg
-                                className="h-6 w-6 lg:h-7 lg:w-7 ml-4 sm:ml-0"
-                                viewBox="0 0 43 43"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M21.5 0C9.62573 0 0 9.62573 0 21.5C0 33.3743 9.62573 43 21.5 43C33.3743 43 43 33.3743 43 21.5C43 9.62573 33.3743 0 21.5 0ZM16.237 30.4113H11.8832V16.4005H16.237V30.4113ZM14.0332 14.6805C12.6581 14.6805 11.769 13.7062 11.769 12.5014C11.769 11.2718 12.685 10.3267 14.0892 10.3267C15.4934 10.3267 16.3534 11.2718 16.3803 12.5014C16.3803 13.7062 15.4934 14.6805 14.0332 14.6805ZM32.138 30.4113H27.7843V22.6467C27.7843 20.8393 27.1527 19.612 25.5783 19.612C24.3756 19.612 23.6612 20.4429 23.3454 21.2424C23.229 21.5269 23.1998 21.93 23.1998 22.3309V30.4091H18.8439V20.8684C18.8439 19.1193 18.7879 17.6569 18.7296 16.3982H22.5123L22.7116 18.3444H22.799C23.3723 17.4307 24.7765 16.0824 27.1258 16.0824C29.9903 16.0824 32.138 18.0018 32.138 22.1271V30.4113Z"
-                                  fill="#FF2D34"
-                                />
-                              </svg>
+                        <div className="absolute group-hover:bottom-1 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg">
+                          <div className="flex justify-evenly items-center gap-2 p-1 text-2xl text-white dark:text-gray-600">
+                            <Link href="">
+                              <FaPhone
+                                size="1.8rem"
+                                fill="black"
+                                className="hover:scale-110 hover:duration-150"
+                              />
                             </Link>
-                            <div className="text-white text-[12px] lg:text-[14px] w-3/4">
-                              <div className="grid grid-rows-2 gap-1 justify-items-start">
-                                <Link
-                                  href="mailto:atharvabalpande07@gmail.com"
-                                  target="_blank"
-                                >
-                                  atharvabalpande07@gmail.com
-                                </Link>
-                                <Link href="tel:914188972" target="_blank">
-                                  +91 8446103465
-                                </Link>
-                              </div>
-                            </div>
+                            <Link href="">
+                              <MdEmail
+                                size="1.8rem"
+                                fill="black"
+                                className="hover:scale-110 hover:duration-150"
+                              />
+                            </Link>
+                            <Link href="">
+                              <FaLinkedin
+                                size="1.8rem"
+                                fill="black"
+                                className="hover:scale-110 hover:duration-150"
+                              />
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -436,6 +426,7 @@ const Speakers = () => {
             </div>
           </div>
         </div>
+        <Contact />
         <Footer />
       </div>
     </>
