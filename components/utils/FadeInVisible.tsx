@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { motion } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
 
 type Props = {
   threshold?: number;
@@ -42,9 +42,7 @@ const FadeInWhenVisible = ({
     <motion.div
       ref={ref}
       initial={{ opacity: 0 }}
-      animate={
-        isVisible ? { opacity: 1, transition: { delay, duration } } : undefined
-      }
+      animate={isVisible ? { opacity: 1, transition: { delay, duration } } : undefined}
       exit={{ opacity: 0, transition: { duration } }}
     >
       {children}
