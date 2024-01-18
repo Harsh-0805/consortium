@@ -24,7 +24,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa";
 
-const EventCard = ({ event }) => {
+const EventCard = ({ event }: { event: any }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -77,10 +77,10 @@ const EventCard = ({ event }) => {
   );
 };
 
-const EventList = ({ events }) => {
+const EventList = ({ events }: { events: any }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-evenly items-center pt-10 gap-10 px-2">
-      {events.map((event, index) => (
+      {events.map((event: any, index: number) => (
         <EventCard key={index} event={event} />
       ))}
     </div>

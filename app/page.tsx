@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { gsap } from "gsap";
 import Cursor from "@/components/Cursor";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import Page from "@/app/events/page"
+import Page from "@/app/explore/page";
 
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
@@ -26,9 +26,7 @@ export default function Home() {
 
   return (
     <>
-      <Cursor isDesktop={isDesktop} />
-      {/* <Event /> */}
-      <Page/>
+      <Page />
     </>
   );
 }
