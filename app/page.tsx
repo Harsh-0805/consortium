@@ -1,13 +1,18 @@
 "use client";
-
-import Image from "next/image";
-import { useState, useEffect } from "react";
-import { gsap } from "gsap";
-import Cursor from "@/components/Cursor";
+import Speakers from "@/components/Speaker";
+import Event from "@/components/Events";
+import Contact from "@/components/Contact";
+import Navbar from "@/components/Navbar";
+import Landing from "@/components/Landing";
+import About from "@/components/About";
+import Stats from "@/components/Stats";
+import Footer from "@/components/Footer";
+import React, { useEffect, useState } from "react";
+import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import Page from "@/app/explore/page";
+import Cursor from "@/components/Cursor";
 
-export default function Home() {
+const Home = () => {
   gsap.registerPlugin(ScrollTrigger);
   gsap.config({ nullTargetWarn: false });
 
@@ -26,7 +31,19 @@ export default function Home() {
 
   return (
     <>
-      <Page />
+      <Cursor isDesktop={isDesktop} />
+      <div className="flex flex-col bg-black overflow-hidden">
+        <Navbar />
+        <Landing />
+        <About />
+        <Stats />
+        <Speakers />
+        <Event />
+        <Contact />
+        <Footer />
+      </div>
     </>
   );
-}
+};
+
+export default Home;
