@@ -54,6 +54,13 @@ const speakersData = [
     youtube: "Surgical Strike, URI",
   },
   {
+    name: "SIMON TAUFEL",
+    role: "Former Cricket Umpire",
+    imageUrl: simon,
+    title: "Aman",
+    youtube: "International Cricket Council",
+  },
+  {
     name: "Aman Dhattarwal",
     role: "Founder of Apni Kaksha & Apna College",
     imageUrl: aman,
