@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
             <div className="grid grid-cols-1 gap-3 md:gap-6 lg:gap-10 md:grid-cols-2 xl:grid-cols-4 lg:col-span-3">
               <div className="flex flex-col items-center lg:items-start gap-2">
-                <p className="font-bold text-base md:text-lg lg:text-xl uppercase text-start">
+                <p className="font-bold text-red-600 text-base md:text-lg lg:text-xl uppercase text-start">
                   Consortium&apos;23
                 </p>
                 <p className="text-center lg:text-left text-[12px] md:text-sm lg:text-base lg:mt-4 w-1/2 lg:w-full">
@@ -31,7 +31,7 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex flex-col items-center lg:items-start gap-2">
-                <p className="font-bold text-base md:text-lg lg:text-xl uppercase text-start">
+                <p className="font-bold text-base text-red-600 md:text-lg lg:text-xl uppercase text-start">
                   Quick Links
                 </p>
                 <nav className="flex flex-col lg:mt-4 space-y-1 lg:space-y-2 items-center lg:items-start lg:ml-2 text-[12px] md:text-sm text-white">
@@ -68,7 +68,7 @@ const Footer = () => {
                 </nav>
               </div>
               <div className="flex flex-col items-center lg:items-start gap-2">
-                <p className="font-bold text-base md:text-lg lg:text-xl uppercase text-start">
+                <p className="font-bold text-base text-red-600 md:text-lg lg:text-xl uppercase text-start">
                   Contact Us
                 </p>
                 <nav className="flex flex-col space-y-1 lg:space-y-2 lg:mt-4 text-start text-[11px] md:text-sm xl:text-base text-white">
@@ -93,7 +93,7 @@ const Footer = () => {
                 </nav>
               </div>
               <div className="flex flex-col items-center lg:items-start gap-2">
-                <p className="font-bold text-base md:text-lg lg:text-xl uppercase">
+                <p className="font-bold  text-red-600 text-base md:text-lg lg:text-xl uppercase">
                   Follow Us
                 </p>
                 <nav className="flex flex-col lg:mt-4 space-y-2 lg:space-y-3 items-start text-sm text-white">
@@ -106,7 +106,7 @@ const Footer = () => {
                     <svg
                       className="w-5 h-5 lg:h-7 lg:w-7"
                       viewBox="0 0 30 30"
-                      fill="none"
+                      fill="#D5242A"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path

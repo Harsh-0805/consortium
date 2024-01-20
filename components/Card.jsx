@@ -19,7 +19,7 @@ function Card({ imagen }) {
       onMouseEnter={() => setShown(true)}
       onMouseLeave={() => setShown(false)}
     >
-      <img src={imagen} alt="" />
+      <img src={imagen} alt="" className="border-2 border-red-600" />
       <h2>Title</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam

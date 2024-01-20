@@ -187,7 +187,6 @@ const speakersData = [
     title: "Aman",
     youtube: "BW Businessworld",
   },
-  
 ];
 
 const Speakers = () => {
@@ -274,7 +273,7 @@ const Speakers = () => {
                   <div />
                   <div className="md:col-span-2 lg:col-span-3 justify-center items-center flex flex-col gap-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                      <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative bg-black lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                      <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
                         <div className="flex items-center gap-4">
                           <Image
                             src={priyanshu}
@@ -286,9 +285,7 @@ const Speakers = () => {
                             <h1 className="text-white-600 dark:text-gray-200 font-bold">
                               Nirmayee Bobade
                             </h1>
-                            <p className="text-gray-400">
-                              Public Relations
-                            </p>
+                            <p className="text-gray-400">Public Relations</p>
                           </div>
                         </div>
                         <div className="absolute group-hover:bottom-1 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg">
@@ -318,7 +315,7 @@ const Speakers = () => {
                         </div>
                       </div>
 
-                      <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative bg-black lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                      <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
                         <div className="flex items-center gap-4">
                           <Image
                             src={mitali}
@@ -330,9 +327,7 @@ const Speakers = () => {
                             <h1 className="text-white-600 dark:text-gray-200 font-bold">
                               Aneesh Patil
                             </h1>
-                            <p className="text-gray-400">
-                              Public Relations
-                            </p>
+                            <p className="text-gray-400">Public Relations</p>
                             <a
                               href=""
                               className="text-xs text-gray-500 dark:text-gray-200 group-hover:opacity-100 opacity-0 transform transition-all duration-500"
@@ -366,7 +361,7 @@ const Speakers = () => {
                         </div>
                       </div>
 
-                      <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative bg-black lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                      <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
                         <div className="flex items-center gap-4">
                           <Image
                             src={balpande}
@@ -378,9 +373,7 @@ const Speakers = () => {
                             <h1 className="text-white-600 dark:text-gray-200 font-bold">
                               Anubhav Singh
                             </h1>
-                            <p className="text-gray-400">
-                              Public Relations
-                            </p>
+                            <p className="text-gray-400">Public Relations</p>
                             <a
                               href=""
                               className="text-xs text-gray-500 dark:text-gray-200 group-hover:opacity-100 opacity-0 transform transition-all duration-500"

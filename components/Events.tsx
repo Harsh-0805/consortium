@@ -11,7 +11,7 @@ const EventCard = ({ event }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="bg-[#1f2937] shadow-2xl rounded-3xl flex justify-center items-center overflow-hidden m-5 p-5">
+    <div className="bg-black border-2 border-red-600 shadow-2xl rounded-3xl flex justify-center items-center overflow-hidden m-5 p-5">
       <div
         className={`relative h-full w-full flex flex-col justify-center items-center rounded-3xl overflow-hidden event-card transition-transform transform-gpu ${
           isHovered ? "tilt-animation" : ""
@@ -37,19 +37,19 @@ const EventCard = ({ event }) => {
               />
             </div>
           </div>
-          <div className="text-4xl flex justify-center mt-12 font-medium">
+          <div className="text-3xl text-red-500 flex justify-center mt-12 font-semibold">
             {event.title}
           </div>
         </div>
 
         {isHovered && (
-          <div className="p-1 absolute inset-0 flex flex-col items-center gap-10 rounded-3xl justify-center bg-white bg-opacity-70 transition-opacity duration-300 opacity-100 overflow-hidden text-black">
+          <div className="p-1 absolute inset-0 flex flex-col items-center gap-10 rounded-3xl justify-center text-white bg-opacity-70 transition-opacity duration-300 opacity-100 overflow-hidden">
             <div className="mt-1 text-2xl font-extrabold">{event.title}</div>
             <div className="p-1 overflow-hidden">
               <p>{event.description}</p>
             </div>
             <div>
-              <button className="bg-transparent hover:bg-[#d5242a] text-red-700 font-semibold hover:text-black py-2 px-4 border border-red-500 hover:border-transparent rounded">
+              <button className="bg-transparent hover:bg-[#d5242a] text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded">
                 Register
               </button>
             </div>

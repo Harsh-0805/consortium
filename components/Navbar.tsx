@@ -28,8 +28,8 @@ const Navbar = () => {
           <a href="https://www.ecellvnit.org/">
             <span className="sr-only">E-Cell VNIT</span>
             <Image
-              height={150}
-              width={100}
+              height={250}
+              width={150}
               priority
               src={ecellLogoWhite}
               alt="E-Cell VNIT"

@@ -80,7 +80,7 @@ const Speakers = () => {
                       className="w-24 lg:w-[120px] lg:h-[120px] object-center object-cover rounded-full transition-all duration-500 transform"
                     />
                     <div className="w-fit transition-all transform duration-500">
-                      <h1 className="text-white font-bold text-lg">
+                      <h1 className="text-red-500 font-bold text-lg">
                         {speaker.name}
                       </h1>
                       <p className="text-white text-sm">{speaker.role}</p>
