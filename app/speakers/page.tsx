@@ -40,18 +40,25 @@ import Contact from "@/components/Contact";
 
 const speakersData = [
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "DR. KIRAN BEDI",
+    role: "24th Lt. Governor",
     imageUrl: kiran,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "Puducherry",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "LT. GEN SATISH DUA",
+    role: "Corps Commander",
     imageUrl: satish_dua,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "Surgical Strike, URI",
+  },
+  {
+    name: "SIMON TAUFEL",
+    role: "Former Cricket Umpire",
+    imageUrl: simon,
+    title: "Aman",
+    youtube: "International Cricket Council",
   },
   {
     name: "Aman Dhattarwal",
@@ -61,139 +68,126 @@ const speakersData = [
     youtube: "Youtube, 7M+ subscribers",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "ANIL SWARUP",
+    role: "Former IAS Officer",
     imageUrl: anil,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "Former Lit. Sec of India",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "PANKHURI GIDWANI",
+    role: "Miss Grand India International",
     imageUrl: pankhuri,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "2018",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "DIVYA GANESH",
+    role: "McKinsey & Company",
     imageUrl: divya,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "Partner ",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "NANDU GIRIYAPUR",
+    role: "Managing Director",
     imageUrl: nandu,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "Deloitte Company",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "SHARAD SOMANI",
+    role: "Executive Director",
     imageUrl: sharad,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "KPMG,Singapore",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "SHIRISH ANDHARE",
+    role: "Director & Head of Product",
     imageUrl: shirish,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "Twitter",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "RAVI BATULLA",
+    role: "Head Merchant Acquiring Solutions",
     imageUrl: ravi,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "Wimbo",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "JATIN SAPRU",
+    role: "Television Presentor",
     imageUrl: jatin,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "Star Sports",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "SANTOSH PANPALIYA",
+    role: "Senior Vice President & Head HR",
     imageUrl: santosh,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "Global Delivery at Infosys",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "KARAN SHAH",
+    role: "Founder & CEO",
     imageUrl: karan,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "IIDE - The Digital School",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "HARSH GOELA",
+    role: "Co-Founder",
     imageUrl: harsh,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "Goela School of Finance LLP",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "SATISH KRISHNAN",
+    role: "Former MD & Head",
     imageUrl: satish,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "Standard Chartered Bank",
   },
 
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "NITIN BAWANKULE",
+    role: "Director and Head",
     imageUrl: nitin,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "Digital Native Business, AWS India",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
-    imageUrl: jatin,
-    title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
-  },
-  {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "SOMDUTTA SINGH",
+    role: "Founder & CEO",
     imageUrl: somdutta,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "Assiduus Global",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "ASHWANI LOHANI",
+    role: "Chief Executive Officer",
     imageUrl: ashwani,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "GMR Group",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "SOHRAB SITARAM",
+    role: "Co-Founder & Director",
     imageUrl: sohrab,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "Keventers",
   },
   {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
+    name: "ANURAG BATRA",
+    role: "Chairman & Editor in Chief",
     imageUrl: anurag,
     title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
+    youtube: "BW Businessworld",
   },
-  {
-    name: "Aman Dhattarwal",
-    role: "Founder of Apni Kaksha & Apna College",
-    imageUrl: simon,
-    title: "Aman",
-    youtube: "Youtube, 7M+ subscribers",
-  },
+  
 ];
 
 const Speakers = () => {
@@ -242,7 +236,7 @@ const Speakers = () => {
                       className="w-24 lg:w-[120px] lg:h-[120px] object-center object-cover rounded-full transition-all duration-500 transform"
                     />
                     <div className="w-fit transition-all transform duration-500">
-                      <h1 className="text-white font-bold text-lg">
+                      <h1 className="text-red-500 font-bold text-lg">
                         {speaker.name}
                       </h1>
                       <p className="text-white text-sm">{speaker.role}</p>
@@ -290,10 +284,10 @@ const Speakers = () => {
 
                           <div className="transition-all transform duration-500">
                             <h1 className="text-white-600 dark:text-gray-200 font-bold">
-                              Tanmay Nagrale
+                              Nirmayee Bobade
                             </h1>
                             <p className="text-gray-400">
-                              Head Of Events and Planning
+                              Public Relations
                             </p>
                           </div>
                         </div>
@@ -334,10 +328,10 @@ const Speakers = () => {
 
                           <div className="transition-all transform duration-500">
                             <h1 className="text-white-600 dark:text-gray-200 font-bold">
-                              Tanmay Nagrale
+                              Aneesh Patil
                             </h1>
                             <p className="text-gray-400">
-                              Head Of Events and Planning
+                              Public Relations
                             </p>
                             <a
                               href=""
@@ -382,10 +376,10 @@ const Speakers = () => {
 
                           <div className="transition-all transform duration-500">
                             <h1 className="text-white-600 dark:text-gray-200 font-bold">
-                              Tanmay Nagrale
+                              Anubhav Singh
                             </h1>
                             <p className="text-gray-400">
-                              Head Of Events and Planning
+                              Public Relations
                             </p>
                             <a
                               href=""
