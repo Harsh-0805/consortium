@@ -112,34 +112,34 @@ const Home = () => {
         "Wallstreet is a stock trading competition that tests managerial skills, allows participants to buy and sell shares, interact with brokers, and discover their trading abilities.",
     },
     {
-      title: "Wallstreet",
+      title: "IPL Auction",
       thumbnail: ceo,
       description:
-        "Wallstreet is a stock trading competition that tests managerial skills, allows participants to buy and sell shares, interact with brokers, and discover their trading abilities.",
+        "The IPL Auction offers a platform for participants to witness world-class players and build the strongest team using analytical skills like budget management and prediction.",
     },
     {
-      title: "Wallstreet",
+      title: "CEO",
       thumbnail: ipl,
       description:
-        "Wallstreet is a stock trading competition that tests managerial skills, allows participants to buy and sell shares, interact with brokers, and discover their trading abilities.",
+        "CEO event cultivates leadership and management skills in students through real-world challenges, calculated risks, and competition to become influential leaders.",
     },
     {
-      title: "Wallstreet",
+      title: "Startup Expo",
       thumbnail: wallstreet,
       description:
-        "Wallstreet is a stock trading competition that tests managerial skills, allows participants to buy and sell shares, interact with brokers, and discover their trading abilities.",
+        "Startup Expo is a national exhibition for startups to showcase innovations, network with participants, speakers, investors, and organizations from India.",
     },
     {
-      title: "Wallstreet",
+      title: "Ad-venture",
       thumbnail: ceo,
       description:
-        "Wallstreet is a stock trading competition that tests managerial skills, allows participants to buy and sell shares, interact with brokers, and discover their trading abilities.",
+        "Ad-venture is an advertisement design competition that tests creativity and marketing strategy to create enticing ads for product sales.",
     },
     {
-      title: "Wallstreet",
+      title: "StartUp Conclave",
       thumbnail: ipl,
       description:
-        "Wallstreet is a stock trading competition that tests managerial skills, allows participants to buy and sell shares, interact with brokers, and discover their trading abilities.",
+        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
     },
     // Add more events as needed
   ];
