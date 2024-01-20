@@ -16,6 +16,29 @@ import Harsh from "@/public/assets/harsh.jpg";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+import abhiuday from "../../public/assets/team/abhiuday.png";
+import akanksha from "../../public/assets/team/akanksha.jpg";
+import balpande from "../../public/assets/team/balpande.png";
+import bhargav from "../../public/assets/team/bhargav.jpg";
+import borkute from "../../public/assets/team/borkute.jpeg";
+import dweeja from "../../public/assets/team/dweeja.jpg";
+import kaabra from "../../public/assets/team/kaabra.jpeg";
+import kench from "../../public/assets/team/kench.png";
+import khanwani from "../../public/assets/team/khanwani.jpg";
+import kushagra from "../../public/assets/team/kushagra.jpg";
+import mitali from "../../public/assets/team/mitali.jpg";
+import priyanshu from "../../public/assets/team/priyanshu.jpg";
+import rajat from "../../public/assets/team/rajat.jpg";
+import rohit from "../../public/assets/team/rohit.jpg";
+import tanishqa from "../../public/assets/team/tanishqa.jpg";
+import tanmay from "../../public/assets/team/tanmay.jpg";
+import karthik_sir from "../../public/assets/team/karthik_sir.png";
+import bhatt_sir from "../../public/assets/team/bhatt_sir.png";
+import taiwade_sir from "../../public/assets/team/taiwade_sir.jpeg";
+import director from "../../public/assets/team/director.png";
+import lataye from "../../public/assets/team/lataye.png";
+import chaurasia from "../../public/assets/team/chaurasia.png";
+
 export default function Team() {
   const [selectedIndex, setSelectedIndex] = React.useState(1);
   const [members] = React.useState({
@@ -254,114 +277,130 @@ export default function Team() {
       },
     ],
     Advisory: [
+      
+      
       {
         id: 1,
-        title: "Nikita Lohiya",
-        // image: nikita,
-        position: undefined,
+        title: 'Atharva Balpande',
+        position: 'Treasurer',
+        image: balpande,
         show: true,
-        linkedin: "https://www.linkedin.com/in/nikita-lohiya-4b21161a1/",
-        mail: "lohiyanikita01@gmail.com",
-        phone: "8390863006",
+        linkedin: 'https://www.linkedin.com/in/atharva-balpande-59105b218/',
+        mail: 'atharvabalpande07@gmail.com',
+        phone: '8446103465'
       },
       {
         id: 2,
-        title: "Siddhesh Dumbre",
-        // image: siddhesh,
+        title: 'Harsh Kaabra',
+        position: 'Head of Corporate Communications',
+        image: kaabra,
         show: true,
-        linkedin: "https://www.linkedin.com/in/siddhesh-dumbre-b7aa76195/",
-        mail: "sdumbre07@gmail.com",
-        phone: "7057997990",
+        linkedin: 'https://www.linkedin.com/in/harsh-kaabra-4641221b9/',
+        mail: 'harshkaabra@gmail.com',
+        phone: '7620216041'
       },
       {
         id: 3,
-        title: "Vanshika Gupta",
-        // image: vanshika,
-        position: undefined,
+        title: 'Vaishnavi Kench',
+        position: 'Head of Corporate Communications',
+        image: kench,
         show: true,
-        linkedin: "https://www.linkedin.com/in/vanshikagupta-/",
-        mail: "vg11072001@gmail.com",
-        phone: "9166845041",
+        linkedin: 'https://www.linkedin.com/in/vaishnavi-kench-a9651b211/',
+        mail: 'vaishnavikench5@gmail.com',
+        phone: '9359630766'
       },
+      
       {
         id: 4,
-        title: "Bhavishya Jain",
-        // image: bhavishya,
-        position: undefined,
+        title: 'Akanksha Dudhe',
+        position: 'Head of Brand Development',
+        image: akanksha,
         show: true,
-        linkedin: "https://www.linkedin.com/in/bhavishya-jain-212051196/",
-        mail: "bhavishyajn7@gmail.com",
-        phone: "9130612265",
+        linkedin: 'https://www.linkedin.com/in/akanksha-dudhe-600444205/',
+        mail: 'atdudhe29@gmail.com',
+        phone: '72182221890'
       },
       {
         id: 5,
-        title: "Tanvi Khurana",
-        // image: tanvi,
-        position: undefined,
+        title: 'Rohit Chouhan',
+        position: 'Head of Brand Development',
+        image: rohit,
         show: true,
-        linkedin: "https://www.linkedin.com/in/tanvi-khurana-1149651b4/",
-        mail: "tksagi1212@gmail.com",
-        phone: "7757820308",
+        linkedin: 'https://www.linkedin.com/in/rohit-chouhan-9a4a95213/',
+        mail: 'rohitgone123@gmail.com',
+        phone: '9021255966'
       },
       {
         id: 6,
-        title: "Jay Chheda",
-        // image: jay,
-        position: undefined,
+        title: 'Dweeja Reddy',
+        position: 'Head of Technical Affairs',
+        image: dweeja,
         show: true,
-        linkedin: "https://www.linkedin.com/in/jay-chheda-8739a0192/",
-        mail: "jaychheda2410@gmail.com",
-        phone: "9870036145",
+        linkedin: 'https://www.linkedin.com/in/dweeja-reddy-devi-b12508204/',
+        mail: 'dweeja54@gmail.com',
+        phone: '8317567940'
       },
       {
         id: 7,
-        title: "Snehal Patil",
-        // image: snehal,
-        position: undefined,
+        title: 'Abhiuday Gupta',
+        position: 'Head of Technical Affairs',
+        image: abhiuday,
         show: true,
-        linkedin: "https://www.linkedin.com/in/snehal-patil-10b08a1a7/",
-        mail: "snehalpatil1801@gmail.com",
-        phone: "9423132631",
+        linkedin: 'https://www.linkedin.com/in/cp-Coder',
+        mail: 'gupta.abhiuday.109@gmail.com',
+        phone: '9517680322'
       },
       {
         id: 8,
-        title: "Prasen Kumar",
-        // image: prasen,
-        position: undefined,
+        title: 'Tanmay Nagrale',
+        position: 'Head Of Events and Planning',
+        image: tanmay,
         show: true,
-        linkedin: "https://www.linkedin.com/in/prasen-kumar-b19b541b3/",
-        mail: "prasenk05@gmail.com",
-        phone: "6265346554",
+        linkedin: 'https://www.linkedin.com/in/tanmay-nagrale-6b38b7205/',
+        mail: 'nagraletanmay123@gmail.com',
+        phone: '9146188972'
       },
       {
         id: 9,
-        title: "Mehul Madne",
-        // image: mehul,
-        position: undefined,
+        title: 'Tanishqa Mishra',
+        position: 'Head Of Events and Planning',
+        image: tanishqa,
         show: true,
-        linkedin: "https://www.linkedin.com/in/mehul-madne-932446191/",
-        mail: "mmadne1999@gmail.com",
-        phone: "9307627987",
+        linkedin: 'https://www.linkedin.com/in/tanishqa-mishra-406ab5209/',
+        mail: 'tanishqam30@gmail.com',
+        phone: '9179713005'
       },
+      
       {
         id: 10,
-        title: "Niharika Madke",
-        // image: niharika,
-        position: undefined,
+        title: 'Mitali Khodke',
+        position: 'Head of Public Relations',
+        image: mitali,
         show: true,
-        linkedin: "https://www.linkedin.com/in/niharika-madke-5879721b4/",
-        mail: "niharikamadke@gmail.com",
-        phone: "9726594357",
+        linkedin: 'https://www.linkedin.com/in/mitali-khodke-63408220b/',
+        mail: 'mitalikhodke@gmail.com',
+        phone: '9309576732'
       },
       {
         id: 11,
-        title: "Deepak Patil",
-        // image: deepak,
-        position: undefined,
+        title: 'Kushagra Upadhyaya',
+        position: 'Head of Operations',
+        image: kushagra,
         show: true,
-        linkedin: "https://www.linkedin.com/in/deepak-patil-156390176/",
-        mail: "patildeep2000@gmail.com",
-        phone: "8485095752",
+        linkedin: 'https://www.linkedin.com/in/kushagra-upadhyaya-967b7220a/',
+        mail: 'kushagraupa5@gmail.com',
+        phone: '9414741300'
+      },
+      
+      {
+        id: 12,
+        title: 'Atharv Borkute',
+        position: 'Head of Operations',
+        image: borkute,
+        show: true,
+        linkedin: 'https://www.linkedin.com/in/atharv-borkute-5a396620b/',
+        mail: 'borkuteatharva@gmail.com',
+        phone: '8010610772'
       },
     ],
   });
