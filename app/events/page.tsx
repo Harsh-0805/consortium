@@ -18,8 +18,9 @@ import expo from "../../public/assets/events/expo.png";
 import adventure from "../../public/assets/events/adventure.png";
 import suc from "../../public/assets/events/suc.png";
 
-import tanmay from "../../public/assets/team/tanmay.jpg";
-import tanishqa from "../../public/assets/team/tanishqa.jpg";
+import khushi from "../../public/assets/team/khushi3.jpg";
+import jai from "../../public/assets/team/jai1.jpg";
+import shravani from "../../public/assets/team/shravani.jpeg";
 import { FaLinkedin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa";
@@ -141,6 +142,60 @@ const Home = () => {
       description:
         "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
     },
+    {
+      title: "NEO",
+      thumbnail: ipl,
+      description:
+        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+    },
+    {
+      title: "Shark Tank Conso",
+      thumbnail: ipl,
+      description:
+        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+    },
+    {
+      title: "Render Ico",
+      thumbnail: ipl,
+      description:
+        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+    },
+    {
+      title: "Swades",
+      thumbnail: ipl,
+      description:
+        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+    },
+    {
+      title: "CEO",
+      thumbnail: ipl,
+      description:
+        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+    },
+    {
+      title: "Biz-Con",
+      thumbnail: ipl,
+      description:
+        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+    },
+    {
+      title: "Codebizz",
+      thumbnail: ipl,
+      description:
+        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+    },
+    {
+      title: "Vishleshan",
+      thumbnail: ipl,
+      description:
+        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+    },
+    {
+      title: "TedX",
+      thumbnail: ipl,
+      description:
+        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+    },
     // Add more events as needed
   ];
 
@@ -222,22 +277,20 @@ const Home = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-evenly items-center gap-10 px-2">
                   <div />
                   <div className="md:col-span-2 lg:col-span-3 justify-center items-center flex flex-col gap-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                      <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                      <div className="w-auto hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
                         <div className="flex items-center gap-4">
                           <Image
-                            src={tanmay}
-                            alt="tanmay"
+                            src={khushi}
+                            alt="khushi"
                             className="w-32 group-hover:w-36 group-hover:h-36 h-32 object-center object-cover rounded-full transition-all duration-500 delay-100 transform"
                           />
 
                           <div className="transition-all transform duration-500">
                             <h1 className="text-white-600 dark:text-gray-200 font-bold">
-                              Tanmay Nagrale
+                              Khushi Tank
                             </h1>
-                            <p className="text-gray-400">
-                              Head Of Events and Planning
-                            </p>
+                            <p className="text-gray-400">Head Of Operations</p>
                           </div>
                         </div>
                         <div className="absolute group-hover:bottom-1 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg">
@@ -267,21 +320,61 @@ const Home = () => {
                         </div>
                       </div>
 
-                      <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                      <div className="w-auto hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
                         <div className="flex items-center gap-4">
                           <Image
-                            src={tanmay}
-                            alt="tanmay"
+                            src={jai}
+                            alt="jai"
                             className="w-32 group-hover:w-36 group-hover:h-36 h-32 object-center object-cover rounded-full transition-all duration-500 delay-100 transform"
                           />
 
                           <div className="transition-all transform duration-500">
                             <h1 className="text-white-600 dark:text-gray-200 font-bold">
-                              Tanmay Nagrale
+                              Jai Mehra
                             </h1>
-                            <p className="text-gray-400">
-                              Head Of Events and Planning
-                            </p>
+                            <p className="text-gray-400">Head Of Operations</p>
+                          </div>
+                        </div>
+                        <div className="absolute group-hover:bottom-1 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg">
+                          <div className="flex justify-evenly items-center gap-2 p-1 text-2xl text-white dark:text-gray-600">
+                            <Link href="">
+                              <FaPhone
+                                size="1.8rem"
+                                fill="black"
+                                className="hover:scale-110 hover:duration-150"
+                              />
+                            </Link>
+                            <Link href="">
+                              <MdEmail
+                                size="1.8rem"
+                                fill="black"
+                                className="hover:scale-110 hover:duration-150"
+                              />
+                            </Link>
+                            <Link href="">
+                              <FaLinkedin
+                                size="1.8rem"
+                                fill="black"
+                                className="hover:scale-110 hover:duration-150"
+                              />
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="w-auto hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                        <div className="flex items-center gap-4">
+                          <Image
+                            src={shravani}
+                            alt="shravani"
+                            className="w-32 group-hover:w-36 group-hover:h-36 h-32 object-center object-cover rounded-full transition-all duration-500 delay-100 transform"
+                          />
+
+                          <div className="transition-all transform duration-500">
+                            <h1 className="text-white-600 dark:text-gray-200 font-bold">
+                              Shravani Bhongade
+                            </h1>
+                            <p className="text-gray-400">Head Of Operations</p>
                             <a
                               href=""
                               className="text-xs text-gray-500 dark:text-gray-200 group-hover:opacity-100 opacity-0 transform transition-all duration-500"

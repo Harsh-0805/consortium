@@ -8,6 +8,10 @@ import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa";
+import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import Contact from "@/components/Contact";
 
 import kiran from "../../public/assets/speakers/kiran.png";
 import satish_dua from "../../public/assets/speakers/satish_dua.png";
@@ -24,19 +28,15 @@ import santosh from "../../public/assets/speakers/santosh.jpg";
 import karan from "../../public/assets/speakers/karan.jpg";
 import harsh from "../../public/assets/speakers/harsh.jpg";
 import satish from "../../public/assets/speakers/satish.jpg";
-import mitali from "../../public/assets/team/mitali.jpg";
-import balpande from "../../public/assets/team/balpande.png";
-import priyanshu from "../../public/assets/team/priyanshu.jpg";
 import somdutta from "../../public/assets/speakers/somdutta.png";
 import ashwani from "../../public/assets/speakers/ashwani.png";
 import sohrab from "../../public/assets/speakers/sohrab.png";
 import anurag from "../../public/assets/speakers/anurag.png";
 import nitin from "../../public/assets/speakers/nitin.png";
 import simon from "../../public/assets/speakers/simon.jpg";
-import Image from "next/image";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import Contact from "@/components/Contact";
+
+import niramyee from "../../public/assets/team/nirmayee1.jpeg";
+import aneesh from "../../public/assets/team/aneesh3.jpg";
 
 const speakersData = [
   {
@@ -269,15 +269,15 @@ const Speakers = () => {
                     </Link>
                   </h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-evenly items-center gap-10 px-2">
+                <div className="grid grid-cols-1 md:grid-cols-2  justify-evenly items-center gap-10 px-2">
                   <div />
-                  <div className="md:col-span-2 lg:col-span-3 justify-center items-center flex flex-col gap-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                      <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                  <div className="md:col-span-2 justify-center items-center flex flex-col gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                      <div className="m-auto lg:w-[27rem] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
                         <div className="flex items-center gap-4">
                           <Image
-                            src={priyanshu}
-                            alt="tanmay"
+                            src={niramyee}
+                            alt="nirmayee"
                             className="w-32 group-hover:w-36 group-hover:h-36 h-32 object-center object-cover rounded-full transition-all duration-500 delay-100 transform"
                           />
 
@@ -285,7 +285,9 @@ const Speakers = () => {
                             <h1 className="text-white-600 dark:text-gray-200 font-bold">
                               Nirmayee Bobade
                             </h1>
-                            <p className="text-gray-400">Public Relations</p>
+                            <p className="text-gray-400">
+                              Head of Public Relations
+                            </p>
                           </div>
                         </div>
                         <div className="absolute group-hover:bottom-1 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg">
@@ -315,11 +317,11 @@ const Speakers = () => {
                         </div>
                       </div>
 
-                      <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                      <div className="m-auto lg:w-[27rem] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
                         <div className="flex items-center gap-4">
                           <Image
-                            src={mitali}
-                            alt="tanmay"
+                            src={aneesh}
+                            alt="aneesh"
                             className="w-32 group-hover:w-36 group-hover:h-36 h-32 object-center object-cover rounded-full transition-all duration-500 delay-100 transform"
                           />
 
@@ -327,7 +329,9 @@ const Speakers = () => {
                             <h1 className="text-white-600 dark:text-gray-200 font-bold">
                               Aneesh Patil
                             </h1>
-                            <p className="text-gray-400">Public Relations</p>
+                            <p className="text-gray-400">
+                              Head of Public Relations
+                            </p>
                             <a
                               href=""
                               className="text-xs text-gray-500 dark:text-gray-200 group-hover:opacity-100 opacity-0 transform transition-all duration-500"
@@ -361,7 +365,7 @@ const Speakers = () => {
                         </div>
                       </div>
 
-                      <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                      {/* <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
                         <div className="flex items-center gap-4">
                           <Image
                             src={balpande}
@@ -405,7 +409,7 @@ const Speakers = () => {
                             </Link>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

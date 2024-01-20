@@ -11,33 +11,45 @@ import Cursor from "@/components/Cursor";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
-
-import Harsh from "@/public/assets/harsh.jpg";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-import abhiuday from "../../public/assets/team/abhiuday.png";
-import akanksha from "../../public/assets/team/akanksha.jpg";
-import balpande from "../../public/assets/team/balpande.png";
-import bhargav from "../../public/assets/team/bhargav.jpg";
-import borkute from "../../public/assets/team/borkute.jpeg";
-import dweeja from "../../public/assets/team/dweeja.jpg";
-import kaabra from "../../public/assets/team/kaabra.jpeg";
-import kench from "../../public/assets/team/kench.png";
-import khanwani from "../../public/assets/team/khanwani.jpg";
-import kushagra from "../../public/assets/team/kushagra.jpg";
-import mitali from "../../public/assets/team/mitali.jpg";
-import priyanshu from "../../public/assets/team/priyanshu.jpg";
-import rajat from "../../public/assets/team/rajat.jpg";
-import rohit from "../../public/assets/team/rohit.jpg";
-import tanishqa from "../../public/assets/team/tanishqa.jpg";
-import tanmay from "../../public/assets/team/tanmay.jpg";
-import karthik_sir from "../../public/assets/team/karthik_sir.png";
-import bhatt_sir from "../../public/assets/team/bhatt_sir.png";
-import taiwade_sir from "../../public/assets/team/taiwade_sir.jpeg";
-import director from "../../public/assets/team/director.png";
-import lataye from "../../public/assets/team/lataye.png";
-import chaurasia from "../../public/assets/team/chaurasia.png";
+import abhiuday from "../../public/assets/advisory/abhiuday.png";
+import akanksha from "../../public/assets/advisory/akanksha.jpg";
+import balpande from "../../public/assets/advisory/balpande.png";
+import borkute from "../../public/assets/advisory/borkute.jpeg";
+import dweeja from "../../public/assets/advisory/dweeja.jpg";
+import kaabra from "../../public/assets/advisory/kaabra.jpeg";
+import kench from "../../public/assets/advisory/kench.png";
+import kushagra from "../../public/assets/advisory/kushagra.jpg";
+import mitali from "../../public/assets/advisory/mitali.jpg";
+import priyanshu from "../../public/assets/advisory/priyanshu.jpg";
+import rohit from "../../public/assets/advisory/rohit.jpg";
+import tanishqa from "../../public/assets/advisory/tanishqa.jpg";
+import tanmay from "../../public/assets/advisory/tanmay.jpg";
+import karthik_sir from "../../public/assets/advisory/karthik_sir.png";
+import bhatt_sir from "../../public/assets/advisory/bhatt_sir.png";
+import director from "../../public/assets/advisory/director.png";
+import ratnesh_sir from "../../public/assets/team/ratnesh_sir.jpeg";
+import chandra_sir from "../../public/assets/team/chandra_sir.jpg";
+
+import agasti_sir from "../../public/assets/team/agasti_sir.jpeg";
+import bhosale_sir from "../../public/assets/team/bhosale_sir.jpg";
+import harsh from "@/public/assets/team/harsh.jpg";
+import aneesh from "../../public/assets/team/aneesh3.jpg";
+import harshitha from "../../public/assets/team/harshitha2.jpg";
+import jai from "../../public/assets/team/jai1.jpg";
+import khushi from "../../public/assets/team/khushi3.jpg";
+import nikhil from "../../public/assets/team/nikhil3.jpg";
+import pranay from "../../public/assets/team/pranay3.jpg";
+import shravani from "../../public/assets/team/shravani.jpeg";
+import shruti from "../../public/assets/team/shruti1.jpg";
+import anubhav from "../../public/assets/team/anubhav.jpg";
+import ishan from "../../public/assets/team/ishan4.jpg";
+import aditya from "../../public/assets/team/aditya7.jpg";
+import sanchit from "../../public/assets/team/sanchit.png";
+import nirmayee from "../../public/assets/team/nirmayee1.jpeg";
+import kshitj from "../../public/assets/team/kshitij.jpg";
 
 export default function Team() {
   const [selectedIndex, setSelectedIndex] = React.useState(1);
@@ -45,9 +57,9 @@ export default function Team() {
     Admin: [
       {
         id: 0.1,
-        title: "Dr. Pramod M. Padole",
+        title: "Dr. P. Padole",
         position: "Director, VNIT",
-        // image: director,
+        image: director,
         show: true,
         linkedin: undefined,
         phone: undefined,
@@ -55,9 +67,9 @@ export default function Team() {
       },
       {
         id: 0.2,
-        title: "Dr. Dilip H. Lataye",
+        title: "Dr. R. Kumar",
         position: "Dean Student Welfare, VNIT",
-        // image: lataye,
+        image: ratnesh_sir,
         show: true,
         linkedin: undefined,
         phone: undefined,
@@ -65,9 +77,9 @@ export default function Team() {
       },
       {
         id: 0.3,
-        title: "Dr. Ashish S Chaurasia",
+        title: "Dr. G. Chandra",
         position: "Assoc. Dean Student Activity & Sports, VNIT",
-        // image: chaurasia,
+        image: chandra_sir,
         show: true,
         linkedin: undefined,
         phone: undefined,
@@ -77,7 +89,7 @@ export default function Team() {
         id: 0.4,
         title: "Dr. S. S. Bhat",
         position: "Advisory",
-        // image: bhatt_sir,
+        image: bhatt_sir,
         show: true,
         linkedin: undefined,
         phone: undefined,
@@ -85,9 +97,9 @@ export default function Team() {
       },
       {
         id: 0.5,
-        title: "Dr. R. V. Taiwade",
+        title: "Dr. K. Balasundaram",
         position: "Professor Incharge",
-        // image: taiwade_sir,
+        image: karthik_sir,
         show: true,
         linkedin: undefined,
         phone: undefined,
@@ -95,9 +107,19 @@ export default function Team() {
       },
       {
         id: 0.6,
-        title: "Dr. K. Balasundaram",
+        title: "Dr. A. Agasti",
         position: "Professor Incharge",
-        // image: karthik_sir,
+        image: agasti_sir,
+        show: true,
+        linkedin: undefined,
+        phone: undefined,
+        mail: undefined,
+      },
+      {
+        id: 0.7,
+        title: "Dr. U. B. Bhosale",
+        position: "Professor Incharge",
+        image: bhosale_sir,
         show: true,
         linkedin: undefined,
         phone: undefined,
@@ -109,7 +131,7 @@ export default function Team() {
         id: 1,
         title: "Priyanshu Singh",
         position: "President",
-        // image: bhargav,
+        image: priyanshu,
         show: true,
         linkedin: "https://www.linkedin.com/in/priyanshu-singh12/",
         mail: "thisispriyanshu2001@gmail.com",
@@ -119,7 +141,7 @@ export default function Team() {
         id: 2,
         title: "Nikhil Khanwani",
         position: "Vice President",
-        // image: rajat,
+        image: nikhil,
         show: true,
         linkedin: "https://www.linkedin.com/in/nikhilkhanwani",
         mail: "nikhilkhanwani010@gmail.com",
@@ -129,7 +151,7 @@ export default function Team() {
         id: 3,
         title: "Ishan Pandey",
         position: "Treasurer",
-        // image: balpande,
+        image: ishan,
         show: true,
         linkedin: "https://www.linkedin.com/in/ishan-pandey-489a3519b",
         mail: "ishanpandey@duck.com",
@@ -139,7 +161,7 @@ export default function Team() {
         id: 4,
         title: "Pranay Gaidhane",
         position: "Head of Corporate Communications",
-        // image: kaabra,
+        image: pranay,
         show: true,
         linkedin: "https://www.linkedin.com/in/pranay-gaidhane-319843217",
         mail: "gaidhanepranay19@gmail.com",
@@ -149,7 +171,7 @@ export default function Team() {
         id: 5,
         title: "Shruti Jain",
         position: "Head of Corporate Communications",
-        // image: kench,
+        image: shruti,
         show: true,
         linkedin: "https://www.linkedin.com/in/shruti-jain-195155247",
         mail: "shrutijain2019@gmail.com",
@@ -159,7 +181,7 @@ export default function Team() {
         id: 6,
         title: "Aditya Wasu",
         position: "Head of Corporate Communications",
-        // image: khanwani,
+        image: aditya,
         show: true,
         linkedin: "https://www.linkedin.com/in/aditya-wasu-90bb27231/",
         mail: "adityawasu2003@gmail.com",
@@ -169,7 +191,7 @@ export default function Team() {
         id: 7,
         title: "Harshitha Rampuram",
         position: "Head of Brand Marketing",
-        // image: akanksha,
+        image: harshitha,
         show: true,
         linkedin: "https://www.linkedin.com/in/harshitha-rampuram-1b3523253/",
         mail: "harshitharampuram@gmail.com",
@@ -179,7 +201,7 @@ export default function Team() {
         id: 8,
         title: "Harsh Badala",
         position: "Head of Technical Affairs",
-        // image: rohit,
+        image: harsh,
         show: true,
         linkedin: "https://www.linkedin.com/in/harsh-badala-7aa11a226",
         mail: "harshbadala0805@gmail.com",
@@ -189,7 +211,7 @@ export default function Team() {
         id: 9,
         title: "Sanchit Padwekar",
         position: "Head of Technical Affairs",
-        // image: dweeja,
+        image: sanchit,
         show: true,
         linkedin: "https://www.linkedin.com/in/sanchit-padwekar-57909a216/",
         mail: "padwekarsanchit@gmail.com",
@@ -199,7 +221,7 @@ export default function Team() {
         id: 10,
         title: "Aneesh Patil",
         position: "Head Of Public Relations",
-        // image: abhiuday,
+        image: aneesh,
         show: true,
         linkedin: "https://www.linkedin.com/in/aneesh-patil-500465224/",
         mail: "aneeshpatil18@gmail.com",
@@ -209,7 +231,7 @@ export default function Team() {
         id: 11,
         title: "Nirmayee Bobade",
         position: "Head Of Public Relations",
-        // image: tanmay,
+        image: nirmayee,
         show: true,
         linkedin: "https://www.linkedin.com/in/nirmayee-bobade-973203228",
         mail: "bt21mme041@students.vnit.ac.in",
@@ -219,7 +241,7 @@ export default function Team() {
         id: 12,
         title: "Anubhav Singh",
         position: "Head of Media and Publicity",
-        // image: tanishqa,
+        image: anubhav,
         show: true,
         linkedin: "https://www.linkedin.com/in/anubhav-singh-970417235",
         mail: "anubhav.singh.2520@gmail.com",
@@ -229,7 +251,7 @@ export default function Team() {
         id: 13,
         title: "Khushi Tank",
         position: "Head of Public Relations",
-        // image: priyanshu,
+        image: khushi,
         show: true,
         linkedin: "http://www.linkedin.com/in/khushitank",
         mail: "khushitank41@gmail.com",
@@ -239,7 +261,7 @@ export default function Team() {
         id: 14,
         title: "Jai Mehra",
         position: "Head of Operations",
-        // image: mitali,
+        image: jai,
         show: true,
         linkedin: "https://www.linkedin.com/in/jai-mehra-16a112131/",
         mail: "rohitmehrajai@gmail.com",
@@ -249,7 +271,7 @@ export default function Team() {
         id: 15,
         title: "Shravani Bhongade",
         position: "Head of Operations",
-        // image: kushagra,
+        image: shravani,
         show: true,
         linkedin: "https://www.linkedin.com/in/shravani-bhongade-836305233",
         mail: "shravanibhongade678@gmail.com",
@@ -259,7 +281,7 @@ export default function Team() {
         id: 14,
         title: "Devesh Khilnani",
         position: "Head of Product and Consulting",
-        // image: priyanshu,
+        image: priyanshu,
         show: true,
         linkedin: "http://www.linkedin.com/in/khushitank",
         mail: "khushitank41@gmail.com",
@@ -269,7 +291,7 @@ export default function Team() {
         id: 15,
         title: "Shreyas Jaiwal",
         position: "Head of Growth and Strategy",
-        // image: mitali,
+        image: mitali,
         show: true,
         linkedin: "https://www.linkedin.com/in/jai-mehra-16a112131/",
         mail: "rohitmehrajai@gmail.com",
@@ -279,7 +301,7 @@ export default function Team() {
         id: 16,
         title: "Kshitij Burman",
         position: "Head of Product and Consulting",
-        // image: kushagra,
+        image: kshitj,
         show: true,
         linkedin: "https://www.linkedin.com/in/shravani-bhongade-836305233",
         mail: "shravanibhongade678@gmail.com",
@@ -549,7 +571,7 @@ export default function Team() {
                                   {/* <!-- Image --> */}
                                   <div className="flex justify-center mt-4">
                                     <Image
-                                      src={Harsh}
+                                      src={member.image}
                                       alt=""
                                       className="h-52 w-52 rounded-full object-cover border-[#d5242a] z-10 hover:scale-105 hover:duration-150"
                                       width="210 "
