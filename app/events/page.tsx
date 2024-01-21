@@ -70,9 +70,11 @@ const EventCard = ({ event }: { event: any }) => {
               <p>{event.description}</p>
             </div>
             <div>
-              <button className="bg-transparent hover:bg-[#d5242a] text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded">
-                Register
-              </button>
+              <Link href={`${event.site}`} rel="noreferrer" target="_blank">
+                <button className="bg-transparent hover:bg-[#d5242a] text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded">
+                  Register
+                </button>
+              </Link>
             </div>
           </div>
         )}
@@ -114,84 +116,98 @@ const Home = () => {
       thumbnail: wallstreet,
       description:
         "Wallstreet is a stock trading competition that tests managerial skills, allows participants to buy and sell shares, interact with brokers, and discover their trading abilities.",
+      site: "https://wallstreet.ecellvnit.org",
     },
     {
       title: "IPL Auction",
       thumbnail: ceo,
       description:
         "The IPL Auction offers a platform for participants to witness world-class players and build the strongest team using analytical skills like budget management and prediction.",
+      site: "https://ipl.ecellvnit.org",
     },
     {
       title: "CEO",
       thumbnail: ipl,
       description:
         "CEO event cultivates leadership and management skills in students through real-world challenges, calculated risks, and competition to become influential leaders.",
+      site: "https://ceo.ecellvnit.org",
     },
     {
       title: "Startup Expo",
       thumbnail: wallstreet,
       description:
         "Startup Expo is a national exhibition for startups to showcase innovations, network with participants, speakers, investors, and organizations from India.",
+      site: "https://expo.ecellvnit.org",
     },
     {
       title: "Ad-venture",
       thumbnail: ceo,
       description:
         "Ad-venture is an advertisement design competition that tests creativity and marketing strategy to create enticing ads for product sales.",
+      site: "https://adventure.ecellvnit.org",
     },
     {
       title: "StartUp Conclave",
       thumbnail: suc,
       description:
         "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+      site: "https://suc.ecellvnit.org",
     },
     {
       title: "NEO",
       thumbnail: neo,
       description:
         "NEO is a PAN India examination and a skill enhancement program for students of class yth to 12th grade to nurture and test their entreprenuerial skills.",
+      site: "https://neo.ecellvnit.org",
     },
     {
       title: "Shark Tank Conso",
       thumbnail: ipl,
       description:
         "Shart Tank Conso, an adoption of the shrak tank wherein ten teams will be shortlisted and will be given an opportunity to pitch their ideas to the investors.",
+      site: null,
     },
     {
       title: "Render Ico",
       thumbnail: render,
       description:
         "All the world's painted a shade of blue, and we fill it up with catchy designs to move people's eyes from sky to your idea.",
+      site: "https://render-ico.ecellvnit.org",
     },
     {
       title: "Swades",
       thumbnail: ipl,
       description:
         "Swades organized by E-Cell,VNIT focuses on the social aspect of entrepreneurhip solving problems like village rehabilitation, education and emplowerment.",
+      site: null,
     },
     {
       title: "Biz-Con",
       thumbnail: ipl,
       description:
         "BIZ-CON is a unique event merging structure of national MUN with a focus on business a d commerece.",
+      site: null,
     },
     {
       title: "Codebizz",
       thumbnail: ipl,
       description:
         "CodeBizz, organized by E-Cell VNIT Nagpur, is a unique fusion of entrepreneurial spirit and technological innovation.",
+      site: null,
     },
     {
       title: "Vishleshan",
       thumbnail: ipl,
       description:
         "Vishleshan, 180DC VNIT's flagship Case Study Competition, provides n exceptional platform for students to demonstrate their strategic insight and innovative thinking.",
+      site: null,
     },
     {
       title: "TedX",
       thumbnail: ted,
       description:
         "The TEDx talk intends to empower the youth with bright ideas and help them witness the future through the eyes of a veteran.",
+      site: null,
     },
     // Add more events as needed
   ];
