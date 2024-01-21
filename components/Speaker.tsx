@@ -69,7 +69,7 @@ const Speakers = () => {
               {speakersData.map((speaker, index) => (
                 <div
                   key={index}
-                  className="bg-[#190401] relative hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] overflow-hidden group rounded-xl p-5 m-5 md:m-10  transition-all duration-500 transform"
+                  className="bg-[#190401] relative hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.3)] overflow-hidden group rounded-xl p-5 m-5 md:m-10  transition-all duration-500 transform"
                 >
                   <div className="flex items-center gap-4">
                     <Image

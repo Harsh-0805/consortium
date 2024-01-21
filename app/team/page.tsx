@@ -50,6 +50,8 @@ import aditya from "../../public/assets/team/aditya7.jpg";
 import sanchit from "../../public/assets/team/sanchit.png";
 import nirmayee from "../../public/assets/team/nirmayee1.jpeg";
 import kshitj from "../../public/assets/team/kshitij.jpg";
+import devesh from "../../public/assets/team/devesh.jpg";
+import shreyas from "../../public/assets/team/shreyas.jpg";
 
 export default function Team() {
   const [selectedIndex, setSelectedIndex] = React.useState(1);
@@ -281,7 +283,7 @@ export default function Team() {
         id: 14,
         title: "Devesh Khilnani",
         position: "Head of Product and Consulting",
-        image: priyanshu,
+        image: devesh,
         show: true,
         linkedin: "http://www.linkedin.com/in/khushitank",
         mail: "khushitank41@gmail.com",
@@ -291,7 +293,7 @@ export default function Team() {
         id: 15,
         title: "Shreyas Jaiwal",
         position: "Head of Growth and Strategy",
-        image: mitali,
+        image: shreyas,
         show: true,
         linkedin: "https://www.linkedin.com/in/jai-mehra-16a112131/",
         mail: "rohitmehrajai@gmail.com",

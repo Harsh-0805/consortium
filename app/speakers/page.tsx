@@ -224,7 +224,7 @@ const Speakers = () => {
               {speakersData.map((speaker, index) => (
                 <div
                   key={index}
-                  className="bg-[#190401] relative hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] overflow-hidden group rounded-xl p-5 m-5 md:m-10  transition-all duration-500 transform"
+                  className="bg-[#190401] relative hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.3)] overflow-hidden group rounded-xl p-5 m-5 md:m-10  transition-all duration-500 transform"
                 >
                   <div className="flex items-center gap-4">
                     <Image
@@ -273,7 +273,7 @@ const Speakers = () => {
                   <div />
                   <div className="md:col-span-2 justify-center items-center flex flex-col gap-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                      <div className="m-auto lg:w-[27rem] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                      <div className="m-auto lg:w-[27rem] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.3)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
                         <div className="flex items-center gap-4">
                           <Image
                             src={niramyee}
@@ -292,21 +292,25 @@ const Speakers = () => {
                         </div>
                         <div className="absolute group-hover:bottom-1 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg">
                           <div className="flex justify-evenly items-center gap-2 p-1 text-2xl text-white dark:text-gray-600">
-                            <Link href="">
+                            <Link href="tel:8208701853">
                               <FaPhone
                                 size="1.8rem"
                                 fill="black"
                                 className="hover:scale-110 hover:duration-150"
                               />
                             </Link>
-                            <Link href="">
+                            <Link href="mailto:bt21mme041@students.vnit.ac.in">
                               <MdEmail
                                 size="1.8rem"
                                 fill="black"
                                 className="hover:scale-110 hover:duration-150"
                               />
                             </Link>
-                            <Link href="">
+                            <Link
+                              href="https://www.linkedin.com/in/nirmayee-bobade-973203228"
+                              rel="noreferrer"
+                              target="_blank"
+                            >
                               <FaLinkedin
                                 size="1.8rem"
                                 fill="black"
@@ -317,7 +321,7 @@ const Speakers = () => {
                         </div>
                       </div>
 
-                      <div className="m-auto lg:w-[27rem] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                      <div className="m-auto lg:w-[27rem] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.3)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
                         <div className="flex items-center gap-4">
                           <Image
                             src={aneesh}
@@ -340,21 +344,25 @@ const Speakers = () => {
                         </div>
                         <div className="absolute group-hover:bottom-1 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg">
                           <div className="flex justify-evenly items-center gap-2 p-1 text-2xl text-white dark:text-gray-600">
-                            <Link href="">
+                            <Link href="tel:9422277113">
                               <FaPhone
                                 size="1.8rem"
                                 fill="black"
                                 className="hover:scale-110 hover:duration-150"
                               />
                             </Link>
-                            <Link href="">
+                            <Link href="mailto:aneeshpatil18@gmail.com">
                               <MdEmail
                                 size="1.8rem"
                                 fill="black"
                                 className="hover:scale-110 hover:duration-150"
                               />
                             </Link>
-                            <Link href="">
+                            <Link
+                              href="https://www.linkedin.com/in/aneesh-patil-500465224/"
+                              rel="noreferrer"
+                              target="_blank"
+                            >
                               <FaLinkedin
                                 size="1.8rem"
                                 fill="black"
@@ -365,7 +373,7 @@ const Speakers = () => {
                         </div>
                       </div>
 
-                      {/* <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                      {/* <div className="md:w-[450px] hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.3)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
                         <div className="flex items-center gap-4">
                           <Image
                             src={balpande}

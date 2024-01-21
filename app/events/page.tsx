@@ -17,6 +17,9 @@ import ceo from "../../public/assets/events/ceo.png";
 import expo from "../../public/assets/events/expo.png";
 import adventure from "../../public/assets/events/adventure.png";
 import suc from "../../public/assets/events/suc.png";
+import neo from "@/public/assets/events/NEO.png";
+import ted from "@/public/assets/events/ted.png";
+import render from "@/public/assets/events/render.jpg";
 
 import khushi from "../../public/assets/team/khushi3.jpg";
 import jai from "../../public/assets/team/jai1.jpg";
@@ -138,63 +141,57 @@ const Home = () => {
     },
     {
       title: "StartUp Conclave",
-      thumbnail: ipl,
+      thumbnail: suc,
       description:
         "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
     },
     {
       title: "NEO",
-      thumbnail: ipl,
+      thumbnail: neo,
       description:
-        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+        "NEO is a PAN India examination and a skill enhancement program for students of class yth to 12th grade to nurture and test their entreprenuerial skills.",
     },
     {
       title: "Shark Tank Conso",
       thumbnail: ipl,
       description:
-        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+        "Shart Tank Conso, an adoption of the shrak tank wherein ten teams will be shortlisted and will be given an opportunity to pitch their ideas to the investors.",
     },
     {
       title: "Render Ico",
-      thumbnail: ipl,
+      thumbnail: render,
       description:
-        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+        "All the world's painted a shade of blue, and we fill it up with catchy designs to move people's eyes from sky to your idea.",
     },
     {
       title: "Swades",
       thumbnail: ipl,
       description:
-        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
-    },
-    {
-      title: "CEO",
-      thumbnail: ipl,
-      description:
-        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+        "Swades organized by E-Cell,VNIT focuses on the social aspect of entrepreneurhip solving problems like village rehabilitation, education and emplowerment.",
     },
     {
       title: "Biz-Con",
       thumbnail: ipl,
       description:
-        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+        "BIZ-CON is a unique event merging structure of national MUN with a focus on business a d commerece.",
     },
     {
       title: "Codebizz",
       thumbnail: ipl,
       description:
-        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+        "CodeBizz, organized by E-Cell VNIT Nagpur, is a unique fusion of entrepreneurial spirit and technological innovation.",
     },
     {
       title: "Vishleshan",
       thumbnail: ipl,
       description:
-        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+        "Vishleshan, 180DC VNIT's flagship Case Study Competition, provides n exceptional platform for students to demonstrate their strategic insight and innovative thinking.",
     },
     {
       title: "TedX",
-      thumbnail: ipl,
+      thumbnail: ted,
       description:
-        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
+        "The TEDx talk intends to empower the youth with bright ideas and help them witness the future through the eyes of a veteran.",
     },
     // Add more events as needed
   ];
@@ -242,14 +239,6 @@ const Home = () => {
                 </div>
 
                 <EventList events={events} />
-                <div className="flex justify-center mt-10 pb-16">
-                  <Link
-                    href="/events/carnival"
-                    className="text-center text-white text-base w-3/4 md:w-1/2 lg:w-1/6 py-2 px-4 bg-gradient-to-b from-[#FF2D34] to-[#D5242A] hover:from-[#D9242A] hover:to-[#C12D34] uppercase"
-                  >
-                    View Conso Carnival
-                  </Link>
-                </div>
               </div>
             </div>
           </div>
@@ -278,7 +267,7 @@ const Home = () => {
                   <div />
                   <div className="md:col-span-2 lg:col-span-3 justify-center items-center flex flex-col gap-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                      <div className="w-auto hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                      <div className="w-auto hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.3)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
                         <div className="flex items-center gap-4">
                           <Image
                             src={khushi}
@@ -295,21 +284,25 @@ const Home = () => {
                         </div>
                         <div className="absolute group-hover:bottom-1 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg">
                           <div className="flex justify-evenly items-center gap-2 p-1 text-2xl text-white dark:text-gray-600">
-                            <Link href="">
+                            <Link href="tel:8275844551">
                               <FaPhone
                                 size="1.8rem"
                                 fill="black"
                                 className="hover:scale-110 hover:duration-150"
                               />
                             </Link>
-                            <Link href="">
+                            <Link href="mailto:khushitank41@gmail.com">
                               <MdEmail
                                 size="1.8rem"
                                 fill="black"
                                 className="hover:scale-110 hover:duration-150"
                               />
                             </Link>
-                            <Link href="">
+                            <Link
+                              href="http://www.linkedin.com/in/khushitank"
+                              rel="noreferrer"
+                              target="_blank"
+                            >
                               <FaLinkedin
                                 size="1.8rem"
                                 fill="black"
@@ -320,7 +313,7 @@ const Home = () => {
                         </div>
                       </div>
 
-                      <div className="w-auto hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                      <div className="w-auto hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.3)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
                         <div className="flex items-center gap-4">
                           <Image
                             src={jai}
@@ -337,21 +330,25 @@ const Home = () => {
                         </div>
                         <div className="absolute group-hover:bottom-1 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg">
                           <div className="flex justify-evenly items-center gap-2 p-1 text-2xl text-white dark:text-gray-600">
-                            <Link href="">
+                            <Link href="tel:9820919570">
                               <FaPhone
                                 size="1.8rem"
                                 fill="black"
                                 className="hover:scale-110 hover:duration-150"
                               />
                             </Link>
-                            <Link href="">
+                            <Link href="mailto:rohitmehrajai@gmail.com">
                               <MdEmail
                                 size="1.8rem"
                                 fill="black"
                                 className="hover:scale-110 hover:duration-150"
                               />
                             </Link>
-                            <Link href="">
+                            <Link
+                              href="https://www.linkedin.com/in/jai-mehra-16a112131/"
+                              rel="noreferrer"
+                              target="_blank"
+                            >
                               <FaLinkedin
                                 size="1.8rem"
                                 fill="black"
@@ -362,7 +359,7 @@ const Home = () => {
                         </div>
                       </div>
 
-                      <div className="w-auto hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.15)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
+                      <div className="w-auto hover:shadow-[0_8px_40px_2px_rgba(255,45,52,0.3)] relative border border-red-600 lg:scale-90 mb-5 overflow-hidden group rounded-xl p-5 transition-all duration-500 transform">
                         <div className="flex items-center gap-4">
                           <Image
                             src={shravani}
@@ -383,21 +380,25 @@ const Home = () => {
                         </div>
                         <div className="absolute group-hover:bottom-1 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg">
                           <div className="flex justify-evenly items-center gap-2 p-1 text-2xl text-white dark:text-gray-600">
-                            <Link href="">
+                            <Link href="tel:8275782707">
                               <FaPhone
                                 size="1.8rem"
                                 fill="black"
                                 className="hover:scale-110 hover:duration-150"
                               />
                             </Link>
-                            <Link href="">
+                            <Link href="mailto:shravanibhongade678@gmail.com">
                               <MdEmail
                                 size="1.8rem"
                                 fill="black"
                                 className="hover:scale-110 hover:duration-150"
                               />
                             </Link>
-                            <Link href="">
+                            <Link
+                              href="https://www.linkedin.com/in/shravani-bhongade-836305233"
+                              rel="noreferrer"
+                              target="_blank"
+                            >
                               <FaLinkedin
                                 size="1.8rem"
                                 fill="black"

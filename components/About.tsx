@@ -155,6 +155,7 @@ const About = () => {
     <>
       <section
         ref={targetSection}
+        id="about"
         className="flex flex-col bg-red-700 bg-[url('/assets/horizon.png')] bg-cover bg-no-repeat bg-blend-normal"
       >
         <div className=" bg-gradient-to-b from-[rgba(0,0,0,0.9)_0%] via-[rgba(12,12,12,0.63)_77.4%] to-[rgba(0,0,0,0.9)_97.28%] grid grid-cols-1 content-center bg-opacity-80 ">
