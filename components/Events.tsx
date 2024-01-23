@@ -3,9 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import "../app/globals.css";
 
-import wallstreet from "../public/assets/events/wallstreet.png";
-import ipl from "../public/assets/events/ipl.png";
-import ceo from "../public/assets/events/ceo.png";
+import wallstreet from "@/public/assets/events/wallstreet.png";
+import ipl from "@/public/assets/events/ipl.png";
+import ted from "@/public/assets/events/ted.png";
+import bizmun from "@/public/assets/events/bizmun.jpg";
+import codebizz from "@/public/assets/events/codebizz.jpg";
+import vishleshan from "@/public/assets/events/Vishleshan.png";
 
 const EventCard = ({ event }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -49,9 +52,13 @@ const EventCard = ({ event }) => {
               <p>{event.description}</p>
             </div>
             <div>
-              <button className="bg-transparent hover:bg-[#d5242a] text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded">
-                Register
-              </button>
+              {event.site && (
+                <Link href={event.site} rel="noreferrer" target="_blank">
+                  <button className="bg-transparent hover:bg-[#d5242a] text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded">
+                    Register
+                  </button>
+                </Link>
+              )}
             </div>
           </div>
         )}
@@ -73,42 +80,47 @@ const EventList = ({ events }) => {
 const Event = () => {
   const events = [
     {
+      title: "TedX",
+      thumbnail: ted,
+      description:
+        "The TEDx talk intends to empower the youth with bright ideas and help them witness the future through the eyes of a veteran.",
+      site: null,
+    },
+    {
+      title: "Vishleshan",
+      thumbnail: vishleshan,
+      description:
+        "Vishleshan, 180DC VNIT's flagship Case Study Competition, provides n exceptional platform for students to demonstrate their strategic insight and innovative thinking.",
+      site: null,
+    },
+    {
+      title: "Codebizz",
+      thumbnail: codebizz,
+      description:
+        "CodeBizz, organized by E-Cell VNIT Nagpur, is a unique fusion of entrepreneurial spirit and technological innovation.",
+      site: null,
+    },
+    {
+      title: "Biz-MUN",
+      thumbnail: bizmun,
+      description:
+        "BIZ-CON is a unique event merging structure of national MUN with a focus on business a d commerece.",
+      site: null,
+    },
+    {
       title: "Wallstreet",
       thumbnail: wallstreet,
       description:
         "Wallstreet is a stock trading competition that tests managerial skills, allows participants to buy and sell shares, interact with brokers, and discover their trading abilities.",
+      site: "https://wallstreet.ecellvnit.org",
     },
     {
       title: "IPL Auction",
-      thumbnail: ceo,
+      thumbnail: ipl,
       description:
         "The IPL Auction offers a platform for participants to witness world-class players and build the strongest team using analytical skills like budget management and prediction.",
+      site: "https://ipl.ecellvnit.org",
     },
-    {
-      title: "CEO",
-      thumbnail: ipl,
-      description:
-        "CEO event cultivates leadership and management skills in students through real-world challenges, calculated risks, and competition to become influential leaders.",
-    },
-    {
-      title: "Startup Expo",
-      thumbnail: wallstreet,
-      description:
-        "Startup Expo is a national exhibition for startups to showcase innovations, network with participants, speakers, investors, and organizations from India.",
-    },
-    {
-      title: "Ad-venture",
-      thumbnail: ceo,
-      description:
-        "Ad-venture is an advertisement design competition that tests creativity and marketing strategy to create enticing ads for product sales.",
-    },
-    {
-      title: "StartUp Conclave",
-      thumbnail: ipl,
-      description:
-        "StartUp Conclave is a national business plan competition that promotes entrepreneurship and fosters great ideas into successful undertakings.",
-    },
-    // Add more events as needed
   ];
 
   return (

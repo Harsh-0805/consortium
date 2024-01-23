@@ -13,13 +13,18 @@ import gsap from "gsap";
 
 import wallstreet from "../../public/assets/events/wallstreet.png";
 import ipl from "../../public/assets/events/ipl.png";
-import ceo from "../../public/assets/events/ceo.png";
+import ceo from "../../public/assets/events/ceo.webp";
 import expo from "../../public/assets/events/expo.png";
 import adventure from "../../public/assets/events/adventure.png";
-import suc from "../../public/assets/events/suc.png";
+import suc from "../../public/assets/events/suc.webp";
 import neo from "@/public/assets/events/NEO.png";
 import ted from "@/public/assets/events/ted.png";
 import render from "@/public/assets/events/render.jpg";
+import bizmun from "@/public/assets/events/bizmun.jpg";
+import codebizz from "@/public/assets/events/codebizz.jpg";
+import shark from "@/public/assets/events/shark.png";
+import vishleshan from "@/public/assets/events/Vishleshan.png";
+import swades from "@/public/assets/events/swades.webp";
 
 import khushi from "../../public/assets/team/khushi3.jpg";
 import jai from "../../public/assets/team/jai1.jpg";
@@ -70,11 +75,13 @@ const EventCard = ({ event }: { event: any }) => {
               <p>{event.description}</p>
             </div>
             <div>
-              <Link href={`${event.site}`} rel="noreferrer" target="_blank">
-                <button className="bg-transparent hover:bg-[#d5242a] text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded">
-                  Register
-                </button>
-              </Link>
+              {event.site && (
+                <Link href={event.site} rel="noreferrer" target="_blank">
+                  <button className="bg-transparent hover:bg-[#d5242a] text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded">
+                    Register
+                  </button>
+                </Link>
+              )}
             </div>
           </div>
         )}
@@ -112,6 +119,34 @@ const Home = () => {
 
   const events = [
     {
+      title: "TedX",
+      thumbnail: ted,
+      description:
+        "The TEDx talk intends to empower the youth with bright ideas and help them witness the future through the eyes of a veteran.",
+      site: null,
+    },
+    {
+      title: "Vishleshan",
+      thumbnail: vishleshan,
+      description:
+        "Vishleshan, 180DC VNIT's flagship Case Study Competition, provides n exceptional platform for students to demonstrate their strategic insight and innovative thinking.",
+      site: null,
+    },
+    {
+      title: "Codebizz",
+      thumbnail: codebizz,
+      description:
+        "CodeBizz, organized by E-Cell VNIT Nagpur, is a unique fusion of entrepreneurial spirit and technological innovation.",
+      site: null,
+    },
+    {
+      title: "Biz-MUN",
+      thumbnail: bizmun,
+      description:
+        "BIZ-CON is a unique event merging structure of national MUN with a focus on business a d commerece.",
+      site: null,
+    },
+    {
       title: "Wallstreet",
       thumbnail: wallstreet,
       description:
@@ -120,28 +155,28 @@ const Home = () => {
     },
     {
       title: "IPL Auction",
-      thumbnail: ceo,
+      thumbnail: ipl,
       description:
         "The IPL Auction offers a platform for participants to witness world-class players and build the strongest team using analytical skills like budget management and prediction.",
       site: "https://ipl.ecellvnit.org",
     },
     {
       title: "CEO",
-      thumbnail: ipl,
+      thumbnail: ceo,
       description:
         "CEO event cultivates leadership and management skills in students through real-world challenges, calculated risks, and competition to become influential leaders.",
       site: "https://ceo.ecellvnit.org",
     },
     {
       title: "Startup Expo",
-      thumbnail: wallstreet,
+      thumbnail: expo,
       description:
         "Startup Expo is a national exhibition for startups to showcase innovations, network with participants, speakers, investors, and organizations from India.",
       site: "https://expo.ecellvnit.org",
     },
     {
       title: "Ad-venture",
-      thumbnail: ceo,
+      thumbnail: adventure,
       description:
         "Ad-venture is an advertisement design competition that tests creativity and marketing strategy to create enticing ads for product sales.",
       site: "https://adventure.ecellvnit.org",
@@ -162,7 +197,7 @@ const Home = () => {
     },
     {
       title: "Shark Tank Conso",
-      thumbnail: ipl,
+      thumbnail: shark,
       description:
         "Shart Tank Conso, an adoption of the shrak tank wherein ten teams will be shortlisted and will be given an opportunity to pitch their ideas to the investors.",
       site: null,
@@ -176,37 +211,9 @@ const Home = () => {
     },
     {
       title: "Swades",
-      thumbnail: ipl,
+      thumbnail: swades,
       description:
         "Swades organized by E-Cell,VNIT focuses on the social aspect of entrepreneurhip solving problems like village rehabilitation, education and emplowerment.",
-      site: null,
-    },
-    {
-      title: "Biz-Con",
-      thumbnail: ipl,
-      description:
-        "BIZ-CON is a unique event merging structure of national MUN with a focus on business a d commerece.",
-      site: null,
-    },
-    {
-      title: "Codebizz",
-      thumbnail: ipl,
-      description:
-        "CodeBizz, organized by E-Cell VNIT Nagpur, is a unique fusion of entrepreneurial spirit and technological innovation.",
-      site: null,
-    },
-    {
-      title: "Vishleshan",
-      thumbnail: ipl,
-      description:
-        "Vishleshan, 180DC VNIT's flagship Case Study Competition, provides n exceptional platform for students to demonstrate their strategic insight and innovative thinking.",
-      site: null,
-    },
-    {
-      title: "TedX",
-      thumbnail: ted,
-      description:
-        "The TEDx talk intends to empower the youth with bright ideas and help them witness the future through the eyes of a veteran.",
       site: null,
     },
     // Add more events as needed
