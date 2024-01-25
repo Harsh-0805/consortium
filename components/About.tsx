@@ -165,11 +165,10 @@ const About = () => {
             </p>
           </div>
           <div
-            className={`py-10 px-20 text-justify w-full relative select-none section-container`}
+            className={`py-10 px-20 text-justify text-white w-full relative select-none section-container`}
           >
             {renderQuotes()}
           </div>
-          
         </div>
       </section>
     </>
