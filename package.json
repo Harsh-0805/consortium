@@ -12,6 +12,7 @@
     "@ariakit/react": "^0.3.13",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
+    "@vercel/analytics": "^1.1.2",
     "framer-motion": "^10.17.11",
     "gsap": "^3.12.4",
     "next": "14.0.4",

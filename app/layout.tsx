@@ -3,6 +3,8 @@ import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Providers from "./providers";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
+
 const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
@@ -73,7 +75,10 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={montserrat.className}>
         <div className="flex flex-col-reverse md:flex-none">
-          <Providers>{children}</Providers>
+          <Providers>
+            {children}
+            <Analytics />
+          </Providers>
         </div>
       </body>
     </html>
