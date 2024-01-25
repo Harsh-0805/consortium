@@ -169,16 +169,7 @@ const About = () => {
           >
             {renderQuotes()}
           </div>
-          <div className="px-20 mt-10">
-            <Carousel
-              cards={cards}
-              height="500px"
-              width="30%"
-              margin="0 auto"
-              offset={2}
-              showArrows={false}
-            />
-          </div>
+          
         </div>
       </section>
     </>
