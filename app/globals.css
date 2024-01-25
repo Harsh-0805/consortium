@@ -39,24 +39,24 @@ html {
 }
 
 .tilt-animation {
-  transform: rotate(-3deg); /* Initial tilt */
+  transform: translateY(-5px); /* Initial position */
 }
 
 .tilt-animation:hover {
-  transform: rotate(3deg); /* Tilt on hover */
+  transform: translateY(5px); /* Move down on hover */
 }
 
 /* Add this to your CSS file */
 
 @keyframes tilt {
   0% {
-    transform: rotate(-3deg);
+    transform: translateY(-10px);
   }
   50% {
-    transform: rotate(3deg);
+    transform: translateY(10px);
   }
   100% {
-    transform: rotate(-3deg);
+    transform: translateY(-10px);
   }
 }
 

@@ -39,9 +39,7 @@ const EventCard = ({ event }: { event: any }) => {
   return (
     <div className="bg-black border-2 border-red-600 shadow-2xl rounded-3xl flex justify-center items-center overflow-hidden m-5 p-5">
       <div
-        className={`relative h-full w-full flex flex-col justify-center items-center rounded-3xl overflow-hidden event-card transition-transform transform-gpu ${
-          isHovered ? "tilt-animation" : ""
-        }`}
+        className="relative h-full w-full flex flex-col justify-center items-center rounded-3xl overflow-hidden event-card transition-transform transform-gpu"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -58,7 +56,7 @@ const EventCard = ({ event }: { event: any }) => {
                 width="210"
                 height="210"
                 className={`rounded-full h-52 ${
-                  isHovered ? "scale-125 duration-200" : ""
+                  isHovered ? "tilt-animation" : ""
                 }`}
               />
             </div>
@@ -71,7 +69,7 @@ const EventCard = ({ event }: { event: any }) => {
         {isHovered && (
           <div className="p-1 absolute inset-0 flex flex-col items-center gap-10 rounded-3xl justify-center text-white bg-opacity-70 transition-opacity duration-300 opacity-100 overflow-hidden">
             <div className="mt-1 text-2xl font-extrabold">{event.title}</div>
-            <div className="p-1 overflow-hidden">
+            <div className="p-1 overflow-hidden font-semibold">
               <p>{event.description}</p>
             </div>
             <div>
