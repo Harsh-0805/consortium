@@ -16,7 +16,7 @@ const Landing = () => {
             <Image
               src={conso}
               alt="Conso"
-              className="w-full md:translate-y-20 scale-[0.9] lg:scale-[0.7]"
+              className="w-full md:translate-y-20 lg:scale-[0.7]"
             />
           </div>
           <div className="self-center flex flex-row items-center gap-1 lg:gap-16 w-full pb-10 space-x-5">
