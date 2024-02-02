@@ -1,20 +1,35 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+    screens: {
+      xs: "475px",
+      ...defaultTheme.screens,
+    },
+    linearBorderGradients: {
+      colors: {
+        primary: ["#FF2D34", "#D5242A"],
+        secondary: ["#086BEA", "#0298F9"],
+      },
+      directions: {
+        t: "to top",
+        tr: "to top right",
+        r: "to right",
+        br: "to bottom right",
+        b: "to bottom",
+        bl: "to bottom left",
+        l: "to left",
+        tl: "to top left",
       },
     },
   },
-  plugins: [],
-}
-export default config
+  variants: {
+    linearBorderGradients: ["responsive", "hover", "focus"],
+  },
+  plugins: [require("tailwindcss-border-gradients")()],
+};

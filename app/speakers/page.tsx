@@ -34,6 +34,14 @@ import sohrab from "../../public/assets/speakers/sohrab.png";
 import anurag from "../../public/assets/speakers/anurag.png";
 import nitin from "../../public/assets/speakers/nitin.png";
 import simon from "../../public/assets/speakers/simon.jpg";
+import jimmy from "../../public/assets/speakers/jimmy.jpg";
+import tridha from "../../public/assets/speakers/tridha.jpg";
+import vikas from "../../public/assets/speakers/vikas.jpg";
+import pranav from "../../public/assets/speakers/pranav.jpg";
+import rajeev from "../../public/assets/speakers/rajeev.jpg";
+import vishwajeet from "../../public/assets/speakers/vishwajeet.jpg";
+import adityan from "../../public/assets/speakers/aditya.jpg";
+import sanket from "../../public/assets/speakers/sanket.jpg";
 
 import niramyee from "../../public/assets/team/nirmayee1.jpeg";
 import aneesh from "../../public/assets/team/aneesh3.jpg";
@@ -45,6 +53,69 @@ const speakersData = [
     imageUrl: kiran,
     title: "Aman",
     youtube: "Puducherry",
+  },
+  // {
+  //   name: "Parimal Kalikar",
+  //   role: "24th Lt. Governor",
+  //   imageUrl: kiran,
+  //   title: "Aman",
+  //   youtube: "Puducherry",
+  // },
+  {
+    name: "Vikas Aggarwal",
+    role: "Cofounder & Angel Investor",
+    imageUrl: vikas,
+    title: "Aman",
+    youtube: "FWC & Ola",
+  },
+  {
+    name: "Pranav Koshal",
+    role: "Associate",
+    imageUrl: pranav,
+    title: "Aman",
+    youtube: "Kalaari Capital",
+  },
+  {
+    name: "Rajeev Suri",
+    role: "Managing Partner",
+    imageUrl: rajeev,
+    title: "Aman",
+    youtube: "Orios Venture Partners",
+  },
+  {
+    name: "Vishwajeet Sinha",
+    role: "Chief Marketing Officer",
+    imageUrl: vishwajeet,
+    title: "Aman",
+    youtube: "Meesho",
+  },
+  {
+    name: "Adityan Kayalakal",
+    role: "Senior Director",
+    imageUrl: adityan,
+    title: "Aman",
+    youtube: "Byju's",
+  },
+  {
+    name: "Sanket Narkar",
+    role: "Chief Marketing Officer",
+    imageUrl: sanket,
+    title: "Aman",
+    youtube: "PhysicsWallah",
+  },
+  {
+    name: "Tridha Choudhury",
+    role: "Actress",
+    imageUrl: tridha,
+    title: "Aman",
+    youtube: "",
+  },
+  {
+    name: "JIMMY MISTRY",
+    role: "Chairman & MD",
+    imageUrl: jimmy,
+    title: "Aman",
+    youtube: "Della Group",
   },
   {
     name: "LT. GEN SATISH DUA",
@@ -239,7 +310,7 @@ const Speakers = () => {
                         {speaker.name}
                       </h1>
                       <p className="text-white text-sm">{speaker.role}</p>
-                      <a className="text-sm text-white group-hover:opacity-100 opacity-0 transform transition-all delay-100 duration-500">
+                      <a className="text-sm text-white group-hover:lg:opacity-100 lg:opacity-0 transform transition-all delay-100 duration-500">
                         {speaker.youtube}
                       </a>
                     </div>
