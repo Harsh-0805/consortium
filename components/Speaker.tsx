@@ -84,7 +84,7 @@ const Speakers = () => {
                         {speaker.name}
                       </h1>
                       <p className="text-white text-sm">{speaker.role}</p>
-                      <a className="text-sm text-white group-hover:opacity-100 opacity-0 transform transition-all delay-100 duration-500">
+                      <a className="text-sm text-white group-hover:opacity-100 lg:opacity-0 transform transition-all delay-100 duration-500">
                         {speaker.youtube}
                       </a>
                     </div>

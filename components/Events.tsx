@@ -103,7 +103,7 @@ const Event = () => {
       thumbnail: bizmun,
       description:
         "BIZ-CON is a unique event merging structure of national MUN with a focus on business a d commerece.",
-      site: null,
+      site: "https://bizmun.ecellvnit.org",
     },
     {
       title: "Wallstreet",

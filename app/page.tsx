@@ -70,18 +70,11 @@ const Home = () => {
             />
           </motion.div>
           <motion.div
-            variants={textVariants}
-            initial="hidden"
-            animate="visible"
-            transition={{ duration: 1, delay: 2 }}
-            key="text"
-          ></motion.div>
-          <motion.div
             variants={buttonVariants}
             initial="hidden"
             animate="visible"
             whileHover="hover"
-            transition={{ duration: 0.7, delay: 4 }}
+            transition={{ duration: 0.7, delay: 3 }}
             className="flex justify-center items-center xl:mt-36"
           >
             <Link
