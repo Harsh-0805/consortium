@@ -141,7 +141,7 @@ const Home = () => {
       title: "Biz-MUN",
       thumbnail: bizmun,
       description:
-        "BIZ-CON is a unique event merging structure of national MUN with a focus on business a d commerece.",
+        "BIZ-CON is a unique event merging structure of national MUN with a focus on business and commerece.",
       site: "https://bizmun.ecellvnit.org",
     },
     {
