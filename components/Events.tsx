@@ -78,13 +78,6 @@ const EventList = ({ events }) => {
 const Event = () => {
   const events = [
     {
-      title: "TedX",
-      thumbnail: ted,
-      description:
-        "The TEDx talk intends to empower the youth with bright ideas and help them witness the future through the eyes of a veteran.",
-      site: null,
-    },
-    {
       title: "Vishleshan",
       thumbnail: vishleshan,
       description:
