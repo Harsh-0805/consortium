@@ -5,7 +5,6 @@ import "../app/globals.css";
 
 import wallstreet from "@/public/assets/events/wallstreet.png";
 import ipl from "@/public/assets/events/ipl.png";
-import ted from "@/public/assets/events/ted.png";
 import bizmun from "@/public/assets/events/bizmun.jpg";
 import codebizz from "@/public/assets/events/codebizz.jpg";
 import vishleshan from "@/public/assets/events/Vishleshan.png";
@@ -81,7 +80,7 @@ const Event = () => {
       title: "Vishleshan",
       thumbnail: vishleshan,
       description:
-        "Vishleshan, 180DC VNIT's flagship Case Study Competition, provides n exceptional platform for students to demonstrate their strategic insight and innovative thinking.",
+        "Vishleshan, 180DC VNIT's flagship Case Study Competition, provides an exceptional platform for students to demonstrate their strategic insight and innovative thinking.",
       site: null,
     },
     {
@@ -95,7 +94,7 @@ const Event = () => {
       title: "Biz-MUN",
       thumbnail: bizmun,
       description:
-        "BIZ-CON is a unique event merging structure of national MUN with a focus on business a d commerece.",
+        "BIZ-CON is a unique event merging structure of national MUN with a focus on business and commerce.",
       site: "https://bizmun.ecellvnit.org",
     },
     {
