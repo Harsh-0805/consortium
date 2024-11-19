@@ -200,7 +200,7 @@ export default function Team() {
         position: "Head of Operations & Planning",
         image: abhijeet,
         show: true,
-        linkedin: "linkedin.com/in/abhijeet-singh-as1510",
+        linkedin: "https://www.linkedin.com/in/abhijeet-singh-as1510",
         mail: "abhijeettsingh2715@gmail.com",
         phone: "09106392134",
       },
