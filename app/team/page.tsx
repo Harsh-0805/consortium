@@ -56,7 +56,7 @@ import anshul from "../../public/assets/team/Anshul.jpg";
 import tanvi from "../../public/assets/team/tanvi.jpg";
 import bhakti from "../../public/assets/team/bhakti.jpg";
 import abhijeet from "../../public/assets/team/abhijeet.jpg";
-import anurag from "../../public/assets/team/nikhil3.jpg";
+import anurag from "../../public/assets/team/anurag1.jpeg";
 import rohit2 from "../../public/assets/team/rohit2.jpg";
 import apurva from "../../public/assets/team/apurva.jpg";
 import sudhanshu from "../../public/assets/team/sudhanshu.jpg";
@@ -230,9 +230,10 @@ export default function Team() {
         position: "Head of Brand Marketing",
         image: anurag,
         show: true,
-        linkedin: "https://www.linkedin.com/in/tanvi-malode-5744a4258",
-        mail: "malodetanvi01@Gmail.Com",
-        phone: "9096779472",
+        linkedin:
+          "https://www.linkedin.com/in/anurag-tiwari-172a59250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        mail: "tiwanurag44@gmail.com",
+        phone: "7572041766",
       },
       {
         id: 10,
@@ -263,16 +264,6 @@ export default function Team() {
         linkedin: "https://www.linkedin.com/in/aquib-iqbal-shaikh-042504253",
         mail: "aquibshaikh200215@gmail.com",
         phone: "8581930601",
-      },
-      {
-        id: 13,
-        title: "Hinal Rane",
-        position: "Head of Public Relations",
-        image: khushi,
-        show: true,
-        linkedin: "https://www.linkedin.com/in/anubhav-singh-970417235",
-        mail: "anubhav.singh.2520@gmail.com",
-        phone: "7977491211",
       },
       {
         id: 14,
